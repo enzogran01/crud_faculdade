@@ -106,6 +106,19 @@ namespace FaculdadeProjeto
         }
 
         // aluno
+        public static void validaRA(Aluno aluno, char op)
+        {
+            Erro.setErro(false);
+            if (aluno.ra == null)
+            {
+                Erro.setMsg("O RA é de preenchimento obrigatório.");
+                return;
+            }
+            if (op == 'c')
+                DAL.consultaAluno(aluno);
+            else
+                DAL.deletaAluno(aluno);
+        }
         public static void validaDadosAluno(Aluno aluno, char op)
         {
             Erro.setErro(false);

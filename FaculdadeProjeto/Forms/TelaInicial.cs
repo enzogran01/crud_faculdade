@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FaculdadeProjeto.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +30,13 @@ namespace FaculdadeProjeto
         {
             regProfessor regProfessor = new regProfessor();
             regProfessor.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ConsultaAluno consultaAluno = new ConsultaAluno();
+            consultaAluno.Show();
             this.Hide();
         }
     }

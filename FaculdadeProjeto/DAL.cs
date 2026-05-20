@@ -130,6 +130,32 @@ namespace FaculdadeProjeto
 
         // aluno
 
+        public static int ObterMaiorRA()
+        {
+            conecta();
+
+            // MAX(cd_ra) busca o maior número da coluna. 
+            // ISNULL(..., 0) garante que se a tabela estiver totalmente vazia, ele retorne 0 em vez de NULL.
+            string sql = "SELECT ISNULL(MAX(cd_ra), 0) FROM Aluno";
+
+            strSQL = new SqlCommand(sql, conn);
+
+            try
+            {
+                // ExecuteScalar é perfeito aqui porque a query só devolve 1 linha e 1 coluna (um único número)
+                int maiorRA = Convert.ToInt32(strSQL.ExecuteScalar());
+                return maiorRA;
+            }
+            catch (SqlException sqlErro)
+            {
+                throw new Exception("Erro ao buscar o maior RA: " + sqlErro.Message);
+            }
+            finally
+            {
+                desconecta();
+            }
+        }
+
         public static void insereAluno(Aluno aluno)
         {
             conecta();
@@ -192,20 +218,20 @@ namespace FaculdadeProjeto
             String aux = "SELECT * FROM Aluno WHERE cd_ra = @cd_ra";
 
             strSQL = new SqlCommand(aux, conn);
-            strSQL.Parameters.Add("@cd_ra", aluno.ra);
+            strSQL.Parameters.AddWithValue("@cd_ra", aluno.ra);
             result = strSQL.ExecuteReader();
             Erro.setErro(false);
             if (result.Read())
             {
-                aluno.ra = result.GetString(0);
+                aluno.ra = result["cd_ra"].ToString();
                 aluno.cpf = result.GetString(1);
                 aluno.nome = result.GetString(2);
                 aluno.email = result.GetString(3);
-                aluno.senha = result.GetString(4);
+                //aluno.senha = result.GetString(4);
                 aluno.telefone = result.GetString(5);
                 aluno.dataNascimento = result.GetDateTime(6);
                 aluno.ativo = result.GetBoolean(7);
-                aluno.cd_endereco = result.GetString(8);
+                //aluno.cd_endereco = result.GetInt32(8).ToString();
             }
             else
                 Erro.setMsg("Aluno não cadastrado.");

@@ -30,10 +30,6 @@
         {
             this.btnVoltar = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnConsulta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -46,14 +42,10 @@
             this.btnVoltar.TabIndex = 2;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // listView1
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(124, 67);
             this.listView1.Name = "listView1";
@@ -61,22 +53,6 @@
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "RA";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Nome";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "CPF";
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "E-mail";
             // 
             // btnConsulta
             // 
@@ -107,10 +83,6 @@
 
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Button btnConsulta;
     }
 }

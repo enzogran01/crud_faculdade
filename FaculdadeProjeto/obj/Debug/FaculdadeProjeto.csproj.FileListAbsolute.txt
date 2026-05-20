@@ -147,3 +147,4 @@ C:\Users\Matheux\Documents\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\Facu
 C:\Users\Matheux\Documents\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\Faculdad.0262FDBB.Up2Date
 C:\Users\Matheux\Documents\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.exe
 C:\Users\Matheux\Documents\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.pdb
+C:\Users\Matheux\Documents\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.Forms.ConsultaAluno.resources
