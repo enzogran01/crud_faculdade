@@ -30,7 +30,6 @@
         {
             this.btnVoltar = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.btnConsulta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -54,23 +53,11 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
-            // btnConsulta
-            // 
-            this.btnConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsulta.Location = new System.Drawing.Point(378, 511);
-            this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Size = new System.Drawing.Size(227, 41);
-            this.btnConsulta.TabIndex = 4;
-            this.btnConsulta.Text = "Consulta";
-            this.btnConsulta.UseVisualStyleBackColor = true;
-            this.btnConsulta.Click += new System.EventHandler(this.button1_Click);
-            // 
             // ConsultaAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 575);
-            this.Controls.Add(this.btnConsulta);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnVoltar);
             this.Name = "ConsultaAluno";
@@ -83,6 +70,5 @@
 
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button btnConsulta;
     }
 }

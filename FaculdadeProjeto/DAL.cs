@@ -206,7 +206,7 @@ namespace FaculdadeProjeto
             String aux = "DELETE FROM Aluno WHERE cd_ra = @cd_ra";
 
             strSQL = new SqlCommand(aux, conn);
-            strSQL.Parameters.Add("@cd_ra", aluno.ra);
+            strSQL.Parameters.AddWithValue("@cd_ra", aluno.ra);
             strSQL.ExecuteNonQuery();
 
             desconecta();
@@ -227,7 +227,7 @@ namespace FaculdadeProjeto
                 aluno.cpf = result.GetString(1);
                 aluno.nome = result.GetString(2);
                 aluno.email = result.GetString(3);
-                //aluno.senha = result.GetString(4);
+                aluno.senha = result.GetString(4);
                 aluno.telefone = result.GetString(5);
                 aluno.dataNascimento = result.GetDateTime(6);
                 aluno.ativo = result.GetBoolean(7);
