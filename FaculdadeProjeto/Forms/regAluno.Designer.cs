@@ -169,7 +169,7 @@
             // datanascDateTime
             // 
             this.datanascDateTime.Location = new System.Drawing.Point(184, 430);
-            this.datanascDateTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.datanascDateTime.Margin = new System.Windows.Forms.Padding(2);
             this.datanascDateTime.MaxDate = new System.DateTime(2026, 5, 11, 0, 0, 0, 0);
             this.datanascDateTime.Name = "datanascDateTime";
             this.datanascDateTime.Size = new System.Drawing.Size(151, 20);
@@ -180,7 +180,7 @@
             // 
             this.nomeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomeTextBox.Location = new System.Drawing.Point(70, 115);
-            this.nomeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nomeTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nomeTextBox.Name = "nomeTextBox";
             this.nomeTextBox.Size = new System.Drawing.Size(476, 28);
             this.nomeTextBox.TabIndex = 10;
@@ -189,7 +189,7 @@
             // 
             this.CPFTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CPFTextBox.Location = new System.Drawing.Point(56, 160);
-            this.CPFTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CPFTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.CPFTextBox.Mask = "000.000.000-00";
             this.CPFTextBox.Name = "CPFTextBox";
             this.CPFTextBox.Size = new System.Drawing.Size(165, 32);
@@ -199,7 +199,7 @@
             // 
             this.emailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailTextBox.Location = new System.Drawing.Point(66, 218);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(480, 28);
             this.emailTextBox.TabIndex = 12;
@@ -208,7 +208,7 @@
             // 
             this.senhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.senhaTextBox.Location = new System.Drawing.Point(70, 270);
-            this.senhaTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.senhaTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.senhaTextBox.Name = "senhaTextBox";
             this.senhaTextBox.PasswordChar = '*';
             this.senhaTextBox.Size = new System.Drawing.Size(476, 28);
@@ -229,7 +229,7 @@
             // 
             this.confirmSenhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmSenhaTextBox.Location = new System.Drawing.Point(152, 318);
-            this.confirmSenhaTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.confirmSenhaTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.confirmSenhaTextBox.Name = "confirmSenhaTextBox";
             this.confirmSenhaTextBox.PasswordChar = '*';
             this.confirmSenhaTextBox.Size = new System.Drawing.Size(393, 28);
@@ -239,7 +239,7 @@
             // 
             this.telefoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telefoneTextBox.Location = new System.Drawing.Point(94, 366);
-            this.telefoneTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.telefoneTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.telefoneTextBox.Mask = "(99) 00000-0000";
             this.telefoneTextBox.Name = "telefoneTextBox";
             this.telefoneTextBox.Size = new System.Drawing.Size(177, 32);
@@ -271,7 +271,7 @@
             // 
             this.CEPTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CEPTextBox.Location = new System.Drawing.Point(61, 552);
-            this.CEPTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CEPTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.CEPTextBox.Mask = "00000-000";
             this.CEPTextBox.Name = "CEPTextBox";
             this.CEPTextBox.Size = new System.Drawing.Size(110, 32);
@@ -293,7 +293,7 @@
             // 
             this.cidadeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cidadeTextBox.Location = new System.Drawing.Point(242, 555);
-            this.cidadeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cidadeTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.cidadeTextBox.Name = "cidadeTextBox";
             this.cidadeTextBox.Size = new System.Drawing.Size(303, 28);
             this.cidadeTextBox.TabIndex = 21;
@@ -313,7 +313,7 @@
             // 
             this.estadoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estadoTextBox.Location = new System.Drawing.Point(77, 605);
-            this.estadoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.estadoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.estadoTextBox.MaxLength = 2;
             this.estadoTextBox.Name = "estadoTextBox";
             this.estadoTextBox.Size = new System.Drawing.Size(55, 28);
@@ -334,7 +334,7 @@
             // 
             this.ruaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ruaTextBox.Location = new System.Drawing.Point(182, 605);
-            this.ruaTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ruaTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ruaTextBox.Name = "ruaTextBox";
             this.ruaTextBox.Size = new System.Drawing.Size(363, 28);
             this.ruaTextBox.TabIndex = 25;
@@ -354,7 +354,7 @@
             // 
             this.bairroTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bairroTextBox.Location = new System.Drawing.Point(77, 656);
-            this.bairroTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bairroTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.bairroTextBox.MaxLength = 255;
             this.bairroTextBox.Name = "bairroTextBox";
             this.bairroTextBox.Size = new System.Drawing.Size(204, 28);
@@ -375,7 +375,7 @@
             // 
             this.numeroTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numeroTextBox.Location = new System.Drawing.Point(370, 658);
-            this.numeroTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numeroTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.numeroTextBox.MaxLength = 10;
             this.numeroTextBox.Name = "numeroTextBox";
             this.numeroTextBox.Size = new System.Drawing.Size(175, 28);
@@ -396,7 +396,7 @@
             // 
             this.complementoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.complementoTextBox.Location = new System.Drawing.Point(135, 708);
-            this.complementoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.complementoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.complementoTextBox.MaxLength = 255;
             this.complementoTextBox.Name = "complementoTextBox";
             this.complementoTextBox.Size = new System.Drawing.Size(410, 28);
@@ -417,7 +417,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(152, 782);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(262, 39);
             this.button1.TabIndex = 33;

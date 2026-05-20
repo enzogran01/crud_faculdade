@@ -83,6 +83,12 @@
     <Compile Include="DAL.cs" />
     <Compile Include="Endereco.cs" />
     <Compile Include="Erro.cs" />
+    <Compile Include="Forms\ConsultaAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConsultaAluno.Designer.cs">
+      <DependentUpon>ConsultaAluno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\loginAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,12 @@
     </Compile>
     <Compile Include="Forms\loginProfessor.Designer.cs">
       <DependentUpon>loginProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaProfessor.Designer.cs">
+      <DependentUpon>TelaProfessor.cs</DependentUpon>
     </Compile>
     <Compile Include="Professor.cs" />
     <Compile Include="Program.cs" />
@@ -116,6 +128,9 @@
     <Compile Include="Forms\TelaInicial.Designer.cs">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\ConsultaAluno.resx">
+      <DependentUpon>ConsultaAluno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\loginAluno.resx">
       <DependentUpon>loginAluno.cs</DependentUpon>
     </EmbeddedResource>

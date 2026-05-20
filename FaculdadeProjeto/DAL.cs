@@ -130,57 +130,6 @@ namespace FaculdadeProjeto
 
         // aluno
 
-        // maior RA
-        public static int MaxRA()
-        {
-            conecta();
-            string aux = "SELECT MAX(cd_ra) FROM Aluno";
-            strSQL = new SqlCommand(aux, conn);
-            try
-            {
-                object result = strSQL.ExecuteScalar();
-                desconecta();
-                if (result != DBNull.Value && result != null)
-                {
-                    int maiorRA = Convert.ToInt32(result);
-                    return maiorRA;
-                }
-                else
-                {
-                    Erro.setMsg("A tabela está vazia ou a coluna só possui valores nulos.");
-                    return 0;
-                }
-            }
-            catch (Exception ex)
-            {
-                Erro.setMsg($"Erro ao buscar os dados: {ex.Message}");
-                return 0;
-            }
-        }
-        public static int MaxEndereco()
-        {
-            string aux = "SELECT MAX(cd_endereco) FROM Endereco";
-            strSQL = new SqlCommand(aux, conn);
-            try
-            {
-                object result = strSQL.ExecuteScalar();
-                if (result != DBNull.Value && result != null)
-                {
-                    int maiorEndereco = Convert.ToInt32(result);
-                    return maiorEndereco;
-                }
-                else
-                {
-                    Erro.setMsg("A tabela está vazia ou a coluna só possui valores nulos.");
-                    return 0;
-                }
-            }
-            catch (SqlException sqlErro)
-            {
-                Erro.setMsg($"Erro ao buscar os dados: {sqlErro.Message}");
-                return 0;
-            }
-        }
         public static void insereAluno(Aluno aluno)
         {
             conecta();

@@ -52,10 +52,21 @@ namespace FaculdadeProjeto
             aluno.cpf = CPFTextBox.Text.Replace(",", "").Replace("-", "").Replace("_", "");
             aluno.telefone = telefoneTextBox.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "").Replace("_", "");
             aluno.email = emailTextBox.Text;
-            aluno.senha = senhaTextBox.Text;
+
+            if (senhaTextBox.Text == confirmSenhaTextBox.Text)
+                aluno.senha = senhaTextBox.Text;
+            else
+                Erro.setMsg("As senhas precisam ser iguais!");
+
             aluno.dataNascimento = datanascDateTime.Value;
             aluno.cd_endereco = cdEndereco.ToString();
 
+
+            if (Erro.getErro())
+            {
+                MessageBox.Show(Erro.getMsg());
+                return;
+            }
             BLL.validaDadosAluno(aluno, 'I');
             if (Erro.getErro())
             {
