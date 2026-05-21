@@ -23,6 +23,7 @@ namespace FaculdadeProjeto
         // professor
         public static void validaDadosProfessor(Professor professor, char op)
         {
+            Erro.setMsg("");
             Erro.setErro(false);
             // verifica nome
             if (professor.nome.Length == 0)
@@ -36,7 +37,7 @@ namespace FaculdadeProjeto
                 Erro.setMsg("O campo CPF é obrigatório.");
                 return;
             }
-            else if (!int.TryParse(professor.cpf, out _))
+            else if (!long.TryParse(professor.cpf, out _))
             {
                 Erro.setMsg("O CPF deve conter apenas números.");
                 return;
@@ -47,7 +48,7 @@ namespace FaculdadeProjeto
                 Erro.setMsg("O campo telefone é obrigatório.");
                 return;
             }
-            else if (!int.TryParse(professor.telefone, out _))
+            else if (!long.TryParse(professor.telefone, out _))
             {
                 Erro.setMsg("O telefone deve conter apenas números.");
                 return;
@@ -117,7 +118,9 @@ namespace FaculdadeProjeto
             if (op == 'c')
                 DAL.consultaAluno(aluno);
             else
-                DAL.deletaAluno(aluno);
+            { 
+            //DAL.deletaAluno(aluno);
+            }   
         }
         public static void validaDadosAluno(Aluno aluno, char op)
         {
@@ -136,7 +139,7 @@ namespace FaculdadeProjeto
             }
             else if (!long.TryParse(aluno.cpf, out _))
             {
-                Erro.setMsg("O CPF deve conter apenas números." + aluno.cpf);
+                Erro.setMsg("O CPF deve conter apenas números.");
                 return;
             }
             // verifica telefone

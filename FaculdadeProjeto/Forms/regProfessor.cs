@@ -28,5 +28,31 @@ namespace FaculdadeProjeto
             new loginProfessor().Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Professor professor = new Professor();
+            professor.nome = nomeTextBox.Text;
+            professor.email = emailTextBox.Text;
+            professor.cpf = CPFTextBox.Text.Replace(",", "").Replace("-", "").Replace("_", "");
+            professor.telefone = telefoneTextBox.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "").Replace("_", "");
+            if (senhaTextBox.Text == confirmSenhaTextBox.Text)
+                professor.senha = senhaTextBox.Text;
+            else
+                Erro.setMsg("As senhas precisam ser iguais!");
+            
+            if (Erro.getErro())
+            {
+                MessageBox.Show(Erro.getMsg());
+                return;
+            }
+            BLL.validaDadosProfessor(professor, 'I');
+            if (Erro.getErro())
+            {
+                MessageBox.Show(Erro.getMsg());
+                return;
+            }
+            MessageBox.Show("Aluno cadastrado com sucesso.");
+        }
     }
 }

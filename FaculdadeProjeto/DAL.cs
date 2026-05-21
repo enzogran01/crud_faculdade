@@ -40,22 +40,21 @@ namespace FaculdadeProjeto
         {
             conecta();
             String aux = "INSERT INTO Professor " +
-                "(nm_professor, cd_cpf, cd_telefone_professor, nm_email, cd_senha_professor) VALUES" +
-                "(@nm_professor, @cd_cpf, @cd_telefone_professor, @nm_email, @cd_senha_professor)";
+                "(nm_professor, cd_cpf, cd_telefone_professor, nm_email_professor, cd_senha_professor) VALUES" +
+                "(@nm_professor, @cd_cpf, @cd_telefone_professor, @nm_email_professor, @cd_senha_professor)";
             strSQL = new SqlCommand(aux, conn);
-            strSQL.Parameters.AddWithValue("@cd_professor", professor.id);
             strSQL.Parameters.AddWithValue("@nm_professor", professor.nome);
             strSQL.Parameters.AddWithValue("@cd_cpf", professor.cpf);
             strSQL.Parameters.AddWithValue("@cd_telefone_professor", professor.telefone);
-            strSQL.Parameters.AddWithValue("@nm_email", professor.email);
+            strSQL.Parameters.AddWithValue("@nm_email_professor", professor.email);
             strSQL.Parameters.AddWithValue("@cd_senha_professor", professor.senha);
             try
             {
                 strSQL.ExecuteNonQuery();
             }
-            catch (Exception)
+            catch (SqlException sqlErro)
             {
-                Erro.setMsg("Chave Duplicada!");
+                Erro.setMsg(sqlErro.Message);
             }
             desconecta();
         }
@@ -77,9 +76,9 @@ namespace FaculdadeProjeto
             {
                 strSQL.ExecuteNonQuery();
             }
-            catch (Exception)
+            catch (SqlException sqlErro)
             {
-                Erro.setMsg("Chave Duplicada!");
+                Erro.setMsg(sqlErro.Message);
             }
             desconecta();
         }
@@ -96,9 +95,9 @@ namespace FaculdadeProjeto
             {
                 strSQL.ExecuteNonQuery();
             }
-            catch (Exception)
+            catch (SqlException sqlErro)
             {
-                Erro.setMsg("Chave Duplicada!");
+                Erro.setMsg(sqlErro.Message);
             }
             desconecta();
         }
@@ -202,18 +201,18 @@ namespace FaculdadeProjeto
 
             desconecta();
         }
-        public static void deletaAluno(Aluno aluno)
-        {
-            conecta();
+        //public static void deletaAluno(Aluno aluno)
+        //{
+        //    conecta();
 
-            String aux = "DELETE FROM Aluno WHERE cd_ra = @cd_ra";
+        //    String aux = "DELETE FROM Aluno WHERE cd_ra = @cd_ra";
 
-            strSQL = new SqlCommand(aux, conn);
-            strSQL.Parameters.AddWithValue("@cd_ra", aluno.ra);
-            strSQL.ExecuteNonQuery();
+        //    strSQL = new SqlCommand(aux, conn);
+        //    strSQL.Parameters.AddWithValue("@cd_ra", aluno.ra);
+        //    strSQL.ExecuteNonQuery();
 
-            desconecta();
-        }
+        //    desconecta();
+        //}
         public static void consultaAluno(Aluno aluno)
         {
             conecta();

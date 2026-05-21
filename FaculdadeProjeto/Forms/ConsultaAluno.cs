@@ -84,50 +84,6 @@ namespace FaculdadeProjeto.Forms
             this.Close();
         }
 
-        private void btnExcluir_Click(object sender, EventArgs e)
-        {
-            // 1. Verifica se o usuário realmente clicou em alguma linha do ListView
-            if (listView1.SelectedItems.Count > 0)
-            {
-                // 2. Pega a linha selecionada (índice 0)
-                ListViewItem linhaSelecionada = listView1.SelectedItems[0];
-
-                // 3. O RA está na primeira coluna (Text da linha). Convertemos para número.
-                int raSelecionado = Convert.ToInt32(linhaSelecionada.Text);
-                aluno.ra = raSelecionado.ToString();
-                string nomeAluno = linhaSelecionada.SubItems[2].Text; // Nome está na coluna 2
-
-                // 4. Pergunta para o usuário se ele tem certeza (Boa prática de segurança!)
-                DialogResult confirmacao = MessageBox.Show(
-                    $"Tem certeza que deseja excluir o aluno {nomeAluno} (RA: {raSelecionado})?",
-                    "Confirmar Exclusão",
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Warning
-                );
-
-                if (confirmacao == DialogResult.Yes)
-                {
-                    try
-                    {
-                        // 5. Chama o método de Excluir que criamos no CRUD (Camada de Banco)
-                        DAL.deletaAluno(aluno);
-
-                        MessageBox.Show("Aluno excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        // 6. Recarrega o seu método que popula o ListView para atualizar a tela
-                        ConsultaLista();
-                    }
-                    catch (SqlException sqlErro)
-                    {
-                        MessageBox.Show("Erro ao excluir: " + sqlErro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("Por favor, selecione um aluno na lista para excluir.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
