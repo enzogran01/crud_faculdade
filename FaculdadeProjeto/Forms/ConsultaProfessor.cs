@@ -73,7 +73,7 @@ namespace FaculdadeProjeto.Forms
         {
             if (listView1.SelectedItems.Count > 0)
             {
-                new EdicaoDeAluno(listView1.SelectedItems[0].Text).Show();
+                new EdicaoDeProfessor(listView1.SelectedItems[0].Text).Show();
                 this.Close();
             }
             else

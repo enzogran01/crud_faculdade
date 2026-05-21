@@ -81,7 +81,7 @@ namespace FaculdadeProjeto.Forms
             if (senhaTextBox.Text == confirmSenhaTextBox.Text)
                 _aluno.senha = senhaTextBox.Text;
             else
-                Erro.setMsg("As senhas precisam ser iguais!" + senhaTextBox.Text + " " + confirmSenhaTextBox.Text);
+                Erro.setMsg("As senhas precisam ser iguais!");
 
             _aluno.dataNascimento = datanascDateTime.Value;
 

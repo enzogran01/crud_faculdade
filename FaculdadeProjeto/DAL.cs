@@ -63,15 +63,17 @@ namespace FaculdadeProjeto
         {
             conecta();
             String aux = "UPDATE Professor " +
-                "SET nm_professor = @nm_professor, cd_cpf = @cd_cpf, cd_telefone_professor = @cd_telefone_professor, nm_email = @nm_email, cd_senha_professor = @cd_senha_professor" +
+                "SET nm_professor = @nm_professor, cd_cpf = @cd_cpf, cd_telefone_professor = @cd_telefone_professor, nm_email_professor = @nm_email_professor, cd_senha_professor = @cd_senha_professor, ic_ativado = @ic_ativado " +
                 "WHERE cd_professor = @cd_professor";
             strSQL = new SqlCommand(aux, conn);
             strSQL.Parameters.AddWithValue("@cd_professor", professor.id);
             strSQL.Parameters.AddWithValue("@nm_professor", professor.nome);
             strSQL.Parameters.AddWithValue("@cd_cpf", professor.cpf);
             strSQL.Parameters.AddWithValue("@cd_telefone_professor", professor.telefone);
-            strSQL.Parameters.AddWithValue("@nm_email", professor.email);
+            strSQL.Parameters.AddWithValue("@nm_email_professor", professor.email);
             strSQL.Parameters.AddWithValue("@cd_senha_professor", professor.senha);
+            strSQL.Parameters.AddWithValue("@ic_ativado", professor.ativo);
+
             try
             {
                 strSQL.ExecuteNonQuery();
