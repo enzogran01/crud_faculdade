@@ -14,7 +14,7 @@ namespace FaculdadeProjeto
 {
     internal class DAL
     {
-        private static String strConexao = "Server=MatheuxPC\\SQLEXPRESS;Database=Faculdade;Trusted_Connection=True;TrustServerCertificate=True;";
+        private static String strConexao = "Server=PC1539\\SQL_EXPRESS;Database=Faculdade;Trusted_Connection=True;TrustServerCertificate=True;";
         private static SqlConnection conn = new SqlConnection(strConexao);
         private static SqlCommand strSQL;
         private static SqlDataAdapter adaptador;
@@ -529,6 +529,85 @@ namespace FaculdadeProjeto
             }
             // Retorna a lista (cheia ou vazia) para quem chamou o método
             return listaMatriculas;
+        }
+
+        // Admin    
+
+        public static void insereAdmin(Admin admin)
+        {
+            conecta();
+            String aux = "INSERT INTO Administrador " +
+                "(nm_admin, nm_email_admin, cd_senha_admin) VALUES" +
+                "(@nm_admin, @nm_email_admin, @cd_senha_admin)";
+            strSQL = new SqlCommand(aux, conn);
+            strSQL.Parameters.AddWithValue("@nm_admin", admin.nome);
+            strSQL.Parameters.AddWithValue("@nm_email_admin", admin.email);
+            strSQL.Parameters.AddWithValue("@cd_senha_admin", admin.senha);
+            try
+            {
+                strSQL.ExecuteNonQuery();
+            }
+            catch (SqlException sqlErro)
+            {
+                Erro.setMsg(sqlErro.Message);
+            }
+            desconecta();
+        }
+        public static void atualizaAdmin(Admin admin)
+        {
+            conecta();
+            String aux = "UPDATE Administrador " +
+                "SET nm_admin = @nm_admin, nm_email_admin = @nm_email_admin, cd_senha_admin = @cd_senha_admin " +
+                "WHERE cd_admin = @cd_admin";
+            strSQL = new SqlCommand(aux, conn);
+            strSQL.Parameters.AddWithValue("@cd_admin", admin.id);
+            strSQL.Parameters.AddWithValue("@nm_admin", admin.nome);
+            strSQL.Parameters.AddWithValue("@nm_email_admin", admin.email);
+            strSQL.Parameters.AddWithValue("@cd_senha_admin", admin.senha);
+
+            try
+            {
+                strSQL.ExecuteNonQuery();
+            }
+            catch (SqlException sqlErro)
+            {
+                Erro.setMsg(sqlErro.Message);
+            }
+            desconecta();
+        }
+        public static void consultaAdmin(Admin admin)
+        {
+            conecta();
+
+            String aux = "SELECT * FROM Administrador WHERE cd_admin = @cd_admin";
+
+            strSQL = new SqlCommand(aux, conn);
+            strSQL.Parameters.AddWithValue("@cd_admin", admin.id);
+            result = strSQL.ExecuteReader();
+            Erro.setErro(false);
+            if (result.Read())
+            {
+                admin.id = result["cd_admin"].ToString();
+                admin.nome = result.GetString(1);
+                admin.email = result.GetString(2);
+                admin.senha = result.GetString(3);
+            }
+            else
+                Erro.setMsg("Administrador não cadastrado.");
+
+            desconecta();
+        }
+        public static void deletaAdmin(Admin admin)
+        {
+            conecta();
+
+            String aux = "DELETE FROM Administrador WHERE cd_admin = @cd_admin";
+
+            strSQL = new SqlCommand(aux, conn);
+            strSQL.Parameters.AddWithValue("@cd_admin", admin.id);
+            strSQL.ExecuteNonQuery();
+
+            desconecta();
         }
     }
 }

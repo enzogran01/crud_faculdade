@@ -60,5 +60,12 @@ namespace FaculdadeProjeto.Forms
             new TelaInicial().Show();
             this.Close();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            GerenciaAdmin gerenciaAdmin = new GerenciaAdmin();
+            gerenciaAdmin.Show();
+            this.Close();
+        }
     }
 }

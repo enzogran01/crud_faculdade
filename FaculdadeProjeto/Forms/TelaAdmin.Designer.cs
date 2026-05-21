@@ -33,6 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.btnGerenciarAdmin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button4
@@ -85,11 +86,22 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // btnGerenciarAdmin
+            // 
+            this.btnGerenciarAdmin.Location = new System.Drawing.Point(12, 415);
+            this.btnGerenciarAdmin.Name = "btnGerenciarAdmin";
+            this.btnGerenciarAdmin.Size = new System.Drawing.Size(146, 23);
+            this.btnGerenciarAdmin.TabIndex = 11;
+            this.btnGerenciarAdmin.Text = "Gerenciar Administradores";
+            this.btnGerenciarAdmin.UseVisualStyleBackColor = true;
+            this.btnGerenciarAdmin.Click += new System.EventHandler(this.button6_Click);
+            // 
             // TelaAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(363, 450);
+            this.Controls.Add(this.btnGerenciarAdmin);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -110,5 +122,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnGerenciarAdmin;
     }
 }

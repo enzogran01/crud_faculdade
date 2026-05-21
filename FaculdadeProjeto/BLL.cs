@@ -304,5 +304,62 @@ namespace FaculdadeProjeto
                 DAL.atualizaCurso(curso);
             }
         }
+
+        // admin
+
+        public static void validaIDAdmin(Admin admin, char op)
+        {
+            Erro.setMsg("");
+            Erro.setErro(false);
+            if (admin.id == null)
+            {
+                Erro.setMsg("O ID é de preenchimento obrigatório.");
+                return;
+            }
+            if (op == 'c')
+                DAL.consultaAdmin(admin);
+            else
+            {
+                DAL.deletaAdmin(admin);
+            }
+        }
+
+        public static void validaDadosAdmin(Admin admin, char op)
+        {
+            Erro.setMsg("");
+            Erro.setErro(false);
+            if (admin.nome.Length == 0)
+            {
+                Erro.setMsg("O campo nome é obrigatório.");
+                return;
+            }
+            if (admin.email.ToString().Length == 0)
+            {
+                Erro.setMsg("O campo email é obrigatório.");
+                return;
+            }
+            else if (!System.Text.RegularExpressions.Regex.IsMatch(admin.email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                Erro.setMsg("Email inválido.");
+                return;
+            }
+            if (admin.senha.Length < 8 && admin.senha.Length > 20)
+            {
+                Erro.setMsg("A senha deve ter entre 8 e 20 caracteres.");
+                return;
+            }
+            else if (admin.senha.Length <= 20)
+            {
+                admin.senha = HashSenha(admin.senha);
+            }
+            if (op == 'I')
+            {
+                DAL.insereAdmin(admin);
+            }
+            else
+            {
+                DAL.atualizaAdmin(admin);
+            }
+        }
     }
 }
