@@ -89,11 +89,23 @@
     <Compile Include="Forms\ConsultaAluno.Designer.cs">
       <DependentUpon>ConsultaAluno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ConsultaCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConsultaCurso.Designer.cs">
+      <DependentUpon>ConsultaCurso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ConsultaProfessor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ConsultaProfessor.Designer.cs">
       <DependentUpon>ConsultaProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EdicaoCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EdicaoCurso.Designer.cs">
+      <DependentUpon>EdicaoCurso.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\EdicaoDeAluno.cs">
       <SubType>Form</SubType>
@@ -155,8 +167,14 @@
     <EmbeddedResource Include="Forms\ConsultaAluno.resx">
       <DependentUpon>ConsultaAluno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConsultaCurso.resx">
+      <DependentUpon>ConsultaCurso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConsultaProfessor.resx">
       <DependentUpon>ConsultaProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EdicaoCurso.resx">
+      <DependentUpon>EdicaoCurso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EdicaoDeAluno.resx">
       <DependentUpon>EdicaoDeAluno.cs</DependentUpon>
@@ -169,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\loginProfessor.resx">
       <DependentUpon>loginProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaAdmin.resx">
+      <DependentUpon>TelaAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

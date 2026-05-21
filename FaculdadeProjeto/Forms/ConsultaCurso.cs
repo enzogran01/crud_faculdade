@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace FaculdadeProjeto.Forms
 {
-    public partial class ConsultaProfessor : Form
+    public partial class ConsultaCurso : Form
     {
-        Professor professor = new Professor();
-        public ConsultaProfessor()
+        Curso curso = new Curso();
+        public ConsultaCurso()
         {
             InitializeComponent();
             ConsultaLista();
@@ -34,11 +34,8 @@ namespace FaculdadeProjeto.Forms
 
             // Adiciona os textos de identificação de cada coluna (Texto, Largura em pixels)
             listView1.Columns.Add("ID/Código", 100);
-            listView1.Columns.Add("CPF", 110);
-            listView1.Columns.Add("Nome Completo", 180);
-            listView1.Columns.Add("E-mail", 180);
-            listView1.Columns.Add("Senha", 180);
-            listView1.Columns.Add("Telefone", 110);
+            listView1.Columns.Add("Nome", 180);
+            listView1.Columns.Add("Duracao", 80);
 
             // Dica de performance: congela o visual do ListView enquanto adiciona as linhas
             listView1.BeginUpdate();
@@ -46,22 +43,13 @@ namespace FaculdadeProjeto.Forms
             {
                 Erro.setMsg("");
 
-                professor.id = i.ToString();
-                BLL.validaIDProfessor(professor, 'c');
+                curso.id = i.ToString();
+                BLL.validaIDCurso(curso, 'c');
                 if (!Erro.getErro())
                 {
                     ListViewItem linha = new ListViewItem(i.ToString());
-                    linha.SubItems.Add(professor.cpf);
-                    linha.SubItems.Add(professor.nome);
-                    linha.SubItems.Add(professor.email);
-                    linha.SubItems.Add(professor.senha);
-                    linha.SubItems.Add(professor.telefone);
-
-                    if (!professor.ativo)
-                    {
-                        linha.BackColor = Color.MistyRose;
-                        linha.ForeColor = Color.DarkRed;
-                    }
+                    linha.SubItems.Add(curso.nome);
+                    linha.SubItems.Add(curso.duracao.ToString());
 
                     listView1.Items.Add(linha);
                 }
@@ -73,12 +61,12 @@ namespace FaculdadeProjeto.Forms
         {
             if (listView1.SelectedItems.Count > 0)
             {
-                new EdicaoDeProfessor(listView1.SelectedItems[0].Text).Show();
+                new EdicaoCurso(listView1.SelectedItems[0].Text).Show();
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Por favor, selecione um professor na lista para excluir.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor, selecione um curso na lista para editar.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -86,6 +74,11 @@ namespace FaculdadeProjeto.Forms
         {
             new TelaAdmin().Show();
             this.Close();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

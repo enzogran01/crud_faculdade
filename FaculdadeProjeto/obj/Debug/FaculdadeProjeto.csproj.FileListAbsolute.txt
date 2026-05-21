@@ -151,3 +151,6 @@ C:\Users\Matheux\Documents\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\Facu
 C:\Users\Matheux\Documents\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.Forms.EdicaoDeAluno.resources
 C:\Users\Matheux\Documents\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.Forms.ConsultaProfessor.resources
 C:\Users\Matheux\Documents\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.Forms.EdicaoDeProfessor.resources
+C:\Users\Matheux\Documents\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.Forms.TelaAdmin.resources
+C:\Users\Matheux\Documents\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.Forms.ConsultaCurso.resources
+C:\Users\Matheux\Documents\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.Forms.EdicaoCurso.resources

@@ -354,5 +354,69 @@ namespace FaculdadeProjeto
                 return endereco;
             }
         }
+            // curso
+
+        public static void insereCurso(Curso curso)
+        {
+            conecta();
+            String aux = "INSERT INTO Curso " +
+                "(nm_curso, vl_curso) VALUES" +
+                "(@nm_curso, vl_duracao_curso)";
+            strSQL = new SqlCommand(aux, conn);
+            strSQL.Parameters.AddWithValue("@nm_curso", curso.nome);
+            strSQL.Parameters.AddWithValue("@vl_duracao_curso", curso.duracao);
+            try
+            {
+                strSQL.ExecuteNonQuery();
+            }
+            catch (SqlException sqlErro)
+            {
+                Erro.setMsg(sqlErro.Message);
+            }
+            desconecta();
+        }
+        public static void atualizaCurso(Curso curso)
+        {
+            conecta();
+            String aux = "UPDATE Curso " +
+                "SET nm_curso = @nm_curso, vl_duracao_curso = @vl_duracao_curso " +
+                "WHERE cd_curso = @cd_curso";
+            strSQL = new SqlCommand(aux, conn);
+            strSQL.Parameters.AddWithValue("@cd_curso", curso.id);
+            strSQL.Parameters.AddWithValue("@nm_curso", curso.nome);
+            strSQL.Parameters.AddWithValue("@vl_duracao_curso", curso.duracao);
+
+            try
+            {
+                strSQL.ExecuteNonQuery();
+            }
+            catch (SqlException sqlErro)
+            {
+                Erro.setMsg(sqlErro.Message);
+            }
+            desconecta();
+        }
+
+        public static void consultaCurso(Curso curso)
+        {
+            conecta();
+
+            String aux = "SELECT * FROM Curso WHERE cd_curso = @cd_curso";
+
+            strSQL = new SqlCommand(aux, conn);
+            strSQL.Parameters.AddWithValue("@cd_curso", curso.id);
+            result = strSQL.ExecuteReader();
+            Erro.setErro(false);
+            if (result.Read())
+            {
+                curso.id = result["cd_curso"].ToString();
+                curso.nome = result.GetString(1);
+                curso.duracao = result.GetInt32(2);
+            }
+            else
+                Erro.setMsg("Curso não cadastrado.");
+
+            desconecta();
+        }
     }
 }

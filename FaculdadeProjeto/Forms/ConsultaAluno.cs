@@ -80,7 +80,7 @@ namespace FaculdadeProjeto.Forms
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            new TelaInicial().Show();
+            new TelaAdmin().Show();
             this.Close();
         }
 

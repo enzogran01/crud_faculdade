@@ -259,5 +259,50 @@ namespace FaculdadeProjeto
         {
             return await DAL.buscaCEP(cep);
         }
+
+        // curso
+
+        public static void validaIDCurso(Curso curso, char op)
+        {
+            Erro.setMsg("");
+            Erro.setErro(false);
+            if (curso.id == null)
+            {
+                Erro.setMsg("O ID é de preenchimento obrigatório.");
+                return;
+            }
+            if (op == 'c')
+                DAL.consultaCurso(curso);
+            else
+            {
+                //DAL.deletaAluno(aluno);
+            }
+        }
+
+        public static void validaDadosCurso(Curso curso, char op)
+        {
+            Erro.setMsg("");
+            Erro.setErro(false);
+            // verifica nome
+            if (curso.nome.Length == 0)
+            {
+                Erro.setMsg("O campo nome é obrigatório.");
+                return;
+            }
+            // verifica duracao
+            if (curso.duracao.ToString().Length == 0)
+            {
+                Erro.setMsg("O campo horas é obrigatório.");
+                return;
+            }
+            if (op == 'I')
+            {
+                DAL.insereCurso(curso);
+            }
+            else
+            {
+                DAL.atualizaCurso(curso);
+            }
+        }
     }
 }
