@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FaculdadeProjeto.Models;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
@@ -51,13 +52,13 @@ namespace FaculdadeProjeto
                 result = strSQL.ExecuteReader();
                 if (result.Read())
                 {
-                    professor.id = result["cd_professor"].ToString();
-                    professor.nome = result.GetString(1);
-                    professor.cpf = result.GetString(2);
-                    professor.telefone = result.GetString(3);
-                    professor.email = result.GetString(4);
-                    professor.senha = result.GetString(5);
-                    professor.ativo = result.GetBoolean(6);
+                    ProfessorLogado.id = result["cd_professor"].ToString();
+                    ProfessorLogado.nome = result.GetString(1);
+                    ProfessorLogado.cpf = result.GetString(2);
+                    ProfessorLogado.telefone = result.GetString(3);
+                    ProfessorLogado.email = result.GetString(4);
+                    ProfessorLogado.senha = result.GetString(5);
+                    ProfessorLogado.ativo = result.GetBoolean(6);
 
                     if (!professor.ativo)
                     { 
@@ -213,29 +214,26 @@ namespace FaculdadeProjeto
             SqlCommand strSQL = new SqlCommand(aux, conn);
             strSQL.Parameters.AddWithValue("@email", aluno.email);
             strSQL.Parameters.AddWithValue("@senha", aluno.senha);
-
-
-            // Exatamente a sua lógica original de leitura
             try
             {
                 result = strSQL.ExecuteReader();
                 if (result.Read())
                 {
-                    aluno.ra = result["cd_ra"].ToString();
-                    aluno.cpf = result.GetString(1);
-                    aluno.nome = result.GetString(2);
-                    aluno.email = result.GetString(3);
-                    aluno.senha = result.GetString(4);
-                    aluno.telefone = result.GetString(5);
-                    aluno.dataNascimento = result.GetDateTime(6);
-                    aluno.ativo = result.GetBoolean(7);
+                    AlunoLogado.ra = result["cd_ra"].ToString();
+                    AlunoLogado.cpf = result.GetString(1);
+                    AlunoLogado.nome = result.GetString(2);
+                    AlunoLogado.email = result.GetString(3);
+                    AlunoLogado.senha = result.GetString(4);
+                    AlunoLogado.telefone = result.GetString(5);
+                    AlunoLogado.dataNascimento = result.GetDateTime(6);
+                    AlunoLogado.ativo = result.GetBoolean(7);
 
                     if (!result.IsDBNull(8))
-                        aluno.cd_endereco = result.GetInt32(8).ToString();
+                        AlunoLogado.cd_endereco = result.GetInt32(8).ToString();
                     else
-                        aluno.cd_endereco = "";
+                        AlunoLogado.cd_endereco = "";
 
-                    if (!aluno.ativo)
+                    if (!AlunoLogado.ativo)
                     {
                         Erro.setMsg("Aluno desativado");
                         desconecta();
@@ -639,10 +637,10 @@ namespace FaculdadeProjeto
                 result = strSQL.ExecuteReader();
                 if (result.Read())
                 {
-                    admin.id = result["cd_admin"].ToString();
-                    admin.nome = result.GetString(1);
-                    admin.email = result.GetString(2);
-                    admin.senha = result.GetString(3);
+                    AdminLogado.id = result["cd_admin"].ToString();
+                    AdminLogado.nome = result.GetString(1);
+                    AdminLogado.email = result.GetString(2);
+                    AdminLogado.senha = result.GetString(3);
 
                     Erro.setMsg("");
                     Erro.setErro(false);
