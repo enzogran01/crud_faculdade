@@ -21,7 +21,7 @@ namespace FaculdadeProjeto
             }
         }
         // professor
-        public static void validaID(Professor professor, char op)
+        public static void validaIDProfessor(Professor professor, char op)
         {
             Erro.setMsg("");
             Erro.setErro(false);

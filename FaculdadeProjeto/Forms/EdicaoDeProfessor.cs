@@ -23,7 +23,7 @@ namespace FaculdadeProjeto.Forms
 
         private void EdicaoDeProfessor_Load()
         {
-            BLL.validaID(professor, 'c');
+            BLL.validaIDProfessor(professor, 'c');
 
             if (Erro.getErro())
             {

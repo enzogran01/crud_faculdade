@@ -47,7 +47,7 @@ namespace FaculdadeProjeto.Forms
                 Erro.setMsg("");
 
                 professor.id = i.ToString();
-                BLL.validaID(professor, 'c');
+                BLL.validaIDProfessor(professor, 'c');
                 if (!Erro.getErro())
                 {
                     ListViewItem linha = new ListViewItem(i.ToString());
@@ -78,7 +78,7 @@ namespace FaculdadeProjeto.Forms
             }
             else
             {
-                MessageBox.Show("Por favor, selecione um aluno na lista para excluir.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor, selecione um professor na lista para excluir.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
