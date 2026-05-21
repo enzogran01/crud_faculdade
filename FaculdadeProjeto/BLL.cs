@@ -21,6 +21,36 @@ namespace FaculdadeProjeto
             }
         }
         // professor
+
+        public static void validaEntradaProfessor(Professor professor)
+        {
+
+            // verifica email
+            if (professor.email.Length == 0)
+            {
+                Erro.setMsg("O campo email é obrigatório.");
+                return;
+            }
+            else if (!System.Text.RegularExpressions.Regex.IsMatch(professor.email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                Erro.setMsg("Email inválido.");
+                return;
+            }
+            // verifica senha
+            if (professor.senha.Length < 8)
+            {
+                Erro.setMsg("A senha deve ter entre 8 e 20 caracteres.");
+                return;
+            }
+            else
+            {
+                professor.senha = HashSenha(professor.senha);
+            }
+
+            Erro.setMsg("");
+            Erro.setErro(false);
+            DAL.LoginProfessor(professor);
+        }
         public static void validaIDProfessor(Professor professor, char op)
         {
             Erro.setMsg("");

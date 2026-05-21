@@ -36,7 +36,54 @@ namespace FaculdadeProjeto
             conn.Close();
         }
         // professor
+        public static void LoginProfessor(Professor professor)
+        {
+            conecta();
+            String aux = "SELECT * FROM Professor WHERE nm_email_professor = @email AND cd_senha_professor = @senha";
 
+            SqlCommand strSQL = new SqlCommand(aux, conn);
+            strSQL.Parameters.AddWithValue("@email", professor.email);
+            strSQL.Parameters.AddWithValue("@senha", professor.senha);
+
+            // Exatamente a sua lógica original de leitura
+            try
+            {
+                result = strSQL.ExecuteReader();
+                if (result.Read())
+                {
+                    professor.id = result["cd_professor"].ToString();
+                    professor.nome = result.GetString(1);
+                    professor.cpf = result.GetString(2);
+                    professor.telefone = result.GetString(3);
+                    professor.email = result.GetString(4);
+                    professor.senha = result.GetString(5);
+                    professor.ativo = result.GetBoolean(6);
+
+                    if (!professor.ativo)
+                    { 
+                        Erro.setMsg("Professor desativado!");
+                        desconecta();
+                        return;
+                    }
+
+                    Erro.setMsg("");
+                    Erro.setErro(false);
+                }
+                else
+                {
+                    Erro.setMsg("Email/Senha inválidos");
+                    desconecta();
+                    return;
+                }
+            }
+            catch (SqlException sqlErro)
+            {
+                Erro.setMsg(sqlErro.Message);
+                desconecta();
+                return;
+            }
+            desconecta();
+        }
         public static int ObterMaiorIDProfessor()
         {
             conecta();
@@ -161,17 +208,17 @@ namespace FaculdadeProjeto
         public static void LoginAluno(Aluno aluno)
         {
             conecta();
-            String aux = "SELECT * FROM Aluno WHERE nm_email_aluno = @email AND cd_senha_aluno = @senha AND ic_ativado = 1";
+            String aux = "SELECT * FROM Aluno WHERE nm_email_aluno = @email AND cd_senha_aluno = @senha";
 
             SqlCommand strSQL = new SqlCommand(aux, conn);
             strSQL.Parameters.AddWithValue("@email", aluno.email);
             strSQL.Parameters.AddWithValue("@senha", aluno.senha);
 
-            result = strSQL.ExecuteReader();
 
             // Exatamente a sua lógica original de leitura
             try
             {
+                result = strSQL.ExecuteReader();
                 if (result.Read())
                 {
                     aluno.ra = result["cd_ra"].ToString();
@@ -188,17 +235,27 @@ namespace FaculdadeProjeto
                     else
                         aluno.cd_endereco = "";
 
+                    if (!aluno.ativo)
+                    {
+                        Erro.setMsg("Aluno desativado");
+                        desconecta();
+                        return;
+                    }
+
                     Erro.setMsg("");
                     Erro.setErro(false);
                 }
                 else
                 {
-                    Erro.setMsg("Email/Senha inválidos");
+                    Erro.setMsg("Email/Senha inválidos ou Usuário");
+                    desconecta();
+                    return;
                 }
             }
             catch (SqlException sqlErro)
             {
                 Erro.setMsg(sqlErro.Message);
+                desconecta();
                 return;
             }
             desconecta();
