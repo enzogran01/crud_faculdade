@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FaculdadeProjeto.Forms;
+using FaculdadeProjeto.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,7 +45,12 @@ namespace FaculdadeProjeto
                 MessageBox.Show(Erro.getMsg());
                 return;
             }
-            MessageBox.Show("Login Realizado com sucesso!");
+            if (ProfessorLogado.id != "")
+            {
+                MessageBox.Show($"Bem-vindo {ProfessorLogado.nome}.");
+                new TelaProfessor().Show();
+                this.Close();
+            }
         }
 
         private void btnVoltar_Click_1(object sender, EventArgs e)
