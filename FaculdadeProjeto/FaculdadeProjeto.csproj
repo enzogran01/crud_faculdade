@@ -77,12 +77,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs" />
-    <Compile Include="Aluno.cs" />
+    <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Aluno.cs" />
     <Compile Include="BLL.cs" />
-    <Compile Include="Curso.cs" />
+    <Compile Include="Models\Curso.cs" />
     <Compile Include="DAL.cs" />
-    <Compile Include="Endereco.cs" />
+    <Compile Include="Models\Endereco.cs" />
     <Compile Include="Erro.cs" />
     <Compile Include="Forms\ConsultaAluno.cs">
       <SubType>Form</SubType>
@@ -162,8 +162,8 @@
     <Compile Include="Forms\TelaProfessor.Designer.cs">
       <DependentUpon>TelaProfessor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Matricula.cs" />
-    <Compile Include="Professor.cs" />
+    <Compile Include="Models\Matricula.cs" />
+    <Compile Include="Models\Professor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\regAluno.cs">

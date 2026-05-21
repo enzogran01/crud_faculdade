@@ -14,7 +14,7 @@ namespace FaculdadeProjeto
 {
     internal class DAL
     {
-        private static String strConexao = "Server=PC1539\\SQL_EXPRESS;Database=Faculdade;Trusted_Connection=True;TrustServerCertificate=True;";
+        private static String strConexao = "Server=DESKTOP-71HQBEU\\SQL_EXPRESS;Database=Faculdade;Trusted_Connection=True;TrustServerCertificate=True;";
         private static SqlConnection conn = new SqlConnection(strConexao);
         private static SqlCommand strSQL;
         private static SqlDataAdapter adaptador;
