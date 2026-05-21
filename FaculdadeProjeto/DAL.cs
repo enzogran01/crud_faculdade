@@ -620,6 +620,15 @@ namespace FaculdadeProjeto
             return listaMatriculas;
         }
 
+        // Materia
+        public static void ListarMaterias(Materia materia)
+        {
+            conecta();
+
+            string aux = "SELECT * FROM Materia " +
+                "INNER JOIN"
+        }
+
         // Admin    
         public static void LoginAdmin(Admin admin)
         {

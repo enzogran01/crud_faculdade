@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|c:\\users\\administrador\\onedrive\\desktop\\crud_faculdade\\faculdadeprojeto\\forms\\loginprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\loginprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|c:\\users\\administrador\\onedrive\\desktop\\crud_faculdade\\faculdadeprojeto\\models\\alunologado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\models\\alunologado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|c:\\users\\administrador\\onedrive\\desktop\\crud_faculdade\\faculdadeprojeto\\forms\\loginprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\loginprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|c:\\users\\administrador\\onedrive\\desktop\\crud_faculdade\\faculdadeprojeto\\models\\professorlogado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\models\\professorlogado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|c:\\users\\administrador\\onedrive\\desktop\\crud_faculdade\\faculdadeprojeto\\forms\\consultaaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\consultaaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|c:\\users\\administrador\\onedrive\\desktop\\crud_faculdade\\faculdadeprojeto\\models\\adminlogado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\models\\adminlogado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|c:\\users\\administrador\\onedrive\\desktop\\crud_faculdade\\faculdadeprojeto\\forms\\telaprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\telaprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|c:\\users\\administrador\\onedrive\\desktop\\crud_faculdade\\faculdadeprojeto\\forms\\loginaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\loginaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|c:\\users\\administrador\\onedrive\\desktop\\crud_faculdade\\faculdadeprojeto\\forms\\telaprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\telaprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|c:\\users\\administrador\\onedrive\\desktop\\crud_faculdade\\faculdadeprojeto\\forms\\telaaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\telaaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|c:\\users\\administrador\\onedrive\\desktop\\crud_faculdade\\faculdadeprojeto\\forms\\loginaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\loginaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "loginProfessor.cs",
-              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginProfessor.cs",
-              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\loginProfessor.cs",
-              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginProfessor.cs",
-              "RelativeToolTip": "FaculdadeProjeto\\Forms\\loginProfessor.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAWwDMAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AdminLogado.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Models\\AdminLogado.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Models\\AdminLogado.cs",
+              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Models\\AdminLogado.cs",
+              "RelativeToolTip": "FaculdadeProjeto\\Models\\AdminLogado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T17:17:59.889Z",
+              "WhenOpened": "2026-05-21T18:49:48.827Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "loginProfessor.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginProfessor.cs",
-              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\loginProfessor.cs",
-              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginProfessor.cs [Design]",
-              "RelativeToolTip": "FaculdadeProjeto\\Forms\\loginProfessor.cs [Design]",
+              "Title": "ProfessorLogado.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Models\\ProfessorLogado.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Models\\ProfessorLogado.cs",
+              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Models\\ProfessorLogado.cs",
+              "RelativeToolTip": "FaculdadeProjeto\\Models\\ProfessorLogado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T17:17:51.176Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConsultaAluno.cs",
-              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaAluno.cs",
-              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\ConsultaAluno.cs",
-              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaAluno.cs",
-              "RelativeToolTip": "FaculdadeProjeto\\Forms\\ConsultaAluno.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAtwBwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T17:11:34.491Z",
+              "WhenOpened": "2026-05-21T18:49:43.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TelaProfessor.cs",
-              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaProfessor.cs",
-              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\TelaProfessor.cs",
-              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaProfessor.cs",
-              "RelativeToolTip": "FaculdadeProjeto\\Forms\\TelaProfessor.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwCgAAAA0AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AlunoLogado.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Models\\AlunoLogado.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Models\\AlunoLogado.cs",
+              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Models\\AlunoLogado.cs",
+              "RelativeToolTip": "FaculdadeProjeto\\Models\\AlunoLogado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T17:07:41.336Z",
+              "WhenOpened": "2026-05-21T18:49:33.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TelaProfessor.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaProfessor.cs",
-              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\TelaProfessor.cs",
-              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaProfessor.cs [Design]",
-              "RelativeToolTip": "FaculdadeProjeto\\Forms\\TelaProfessor.cs [Design]",
+              "Title": "TelaAluno.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaAluno.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\TelaAluno.cs",
+              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaAluno.cs [Design]",
+              "RelativeToolTip": "FaculdadeProjeto\\Forms\\TelaAluno.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T17:04:47.655Z",
+              "WhenOpened": "2026-05-21T18:48:09.322Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "loginAluno.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginAluno.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\loginAluno.cs",
+              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginAluno.cs",
+              "RelativeToolTip": "FaculdadeProjeto\\Forms\\loginAluno.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAD4v0AAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T18:46:41.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "loginAluno.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginAluno.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\loginAluno.cs",
+              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Desktop\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginAluno.cs [Design]",
+              "RelativeToolTip": "FaculdadeProjeto\\Forms\\loginAluno.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T18:46:39.854Z",
               "EditorCaption": " [Design]"
             }
           ]

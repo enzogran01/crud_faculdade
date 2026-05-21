@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FaculdadeProjeto.Models
 {
-    internal class ProfessorLogado
+    internal static class ProfessorLogado
     {
         public static String id { get; set; } = "";
         public static String nome { get; set; } = "";

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FaculdadeProjeto.Forms;
+using FaculdadeProjeto.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -55,7 +57,14 @@ namespace FaculdadeProjeto
                 MessageBox.Show(Erro.getMsg());
                 return;
             }
-            MessageBox.Show("Login Realizado com sucesso!");
+            if (AlunoLogado.ra == "")
+            {
+                MessageBox.Show("RA ou senha incorretos!");
+                return;
+            }
+            MessageBox.Show($"Bem-vindo {AlunoLogado.nome}.");
+            new TelaAluno().Show();
+            this.Close();
         }
     }
 }

@@ -77,6 +77,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\TelaAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaAluno.Designer.cs">
+      <DependentUpon>TelaAluno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\AdminLogado.cs" />
     <Compile Include="Models\Aluno.cs" />
@@ -164,6 +170,7 @@
     <Compile Include="Forms\TelaProfessor.Designer.cs">
       <DependentUpon>TelaProfessor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Materia.cs" />
     <Compile Include="Models\Matricula.cs" />
     <Compile Include="Models\Professor.cs" />
     <Compile Include="Models\ProfessorLogado.cs" />
@@ -222,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaAdmin.resx">
       <DependentUpon>TelaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaAluno.resx">
+      <DependentUpon>TelaAluno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaProfessor.resx">
       <DependentUpon>TelaProfessor.cs</DependentUpon>
