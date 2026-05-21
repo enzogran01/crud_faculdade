@@ -119,6 +119,12 @@
     <Compile Include="Forms\loginProfessor.Designer.cs">
       <DependentUpon>loginProfessor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TelaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaAdmin.Designer.cs">
+      <DependentUpon>TelaAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TelaProfessor.cs">
       <SubType>Form</SubType>
     </Compile>

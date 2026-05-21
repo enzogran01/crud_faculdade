@@ -46,5 +46,12 @@ namespace FaculdadeProjeto
             consultaProfessor.Show();
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            TelaAdmin telaAdmin = new TelaAdmin();
+            telaAdmin.Show();
+            this.Hide();
+        }
     }
 }
