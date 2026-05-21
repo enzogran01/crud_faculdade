@@ -21,6 +21,22 @@ namespace FaculdadeProjeto
             }
         }
         // professor
+        public static void validaID(Professor professor, char op)
+        {
+            Erro.setErro(false);
+            if (professor.id == null)
+            {
+                Erro.setMsg("O ID é de preenchimento obrigatório.");
+                return;
+            }
+            if (op == 'c')
+                DAL.consultaProfessor(professor);
+            else
+            {
+                //DAL.deletaAluno(aluno);
+            }
+        }
+
         public static void validaDadosProfessor(Professor professor, char op)
         {
             Erro.setMsg("");

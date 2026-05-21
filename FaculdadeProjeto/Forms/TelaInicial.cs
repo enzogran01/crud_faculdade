@@ -39,5 +39,12 @@ namespace FaculdadeProjeto
             consultaAluno.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ConsultaProfessor consultaProfessor = new ConsultaProfessor();
+            consultaProfessor.Show();
+            this.Hide();
+        }
     }
 }

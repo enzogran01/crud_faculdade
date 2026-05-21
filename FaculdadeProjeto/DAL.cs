@@ -105,25 +105,26 @@ namespace FaculdadeProjeto
         public static void consultaProfessor(Professor professor)
         {
             conecta();
+
             String aux = "SELECT * FROM Professor WHERE cd_professor = @cd_professor";
+
             strSQL = new SqlCommand(aux, conn);
             strSQL.Parameters.AddWithValue("@cd_professor", professor.id);
-            adaptador = new SqlDataAdapter(strSQL);
-            dt.Clear();
-            adaptador.Fill(dt);
-            if (dt.Rows.Count > 0)
+            result = strSQL.ExecuteReader();
+            Erro.setErro(false);
+            if (result.Read())
             {
-                professor.nome = dt.Rows[0]["nm_professor"].ToString();
-                professor.cpf = dt.Rows[0]["cd_cpf"].ToString();
-                professor.telefone = dt.Rows[0]["cd_telefone_professor"].ToString();
-                professor.email = dt.Rows[0]["nm_email"].ToString();
-                professor.senha = dt.Rows[0]["cd_senha_professor"].ToString();
-                professor.ativo = Convert.ToBoolean(dt.Rows[0]["ativo"]);
+                professor.id = result["cd_professor"].ToString();
+                professor.nome = result.GetString(1);
+                professor.cpf = result.GetString(2);
+                professor.telefone = result.GetString(3);
+                professor.email = result.GetString(4);
+                professor.senha = result.GetString(5);
+                professor.ativo = result.GetBoolean(6);
             }
             else
-            {
-                Erro.setMsg("Professor não encontrado!");
-            }
+                Erro.setMsg("Professor não cadastrado.");
+
             desconecta();
         }
 
