@@ -228,6 +228,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnVoltar);
             this.Name = "regProfessor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Criar conta professor";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -468,6 +468,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnVoltar);
             this.Name = "regAluno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Criar conta aluno";
             this.ResumeLayout(false);
             this.PerformLayout();

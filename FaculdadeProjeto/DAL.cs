@@ -158,6 +158,52 @@ namespace FaculdadeProjeto
 
         // aluno
 
+        public static void LoginAluno(Aluno aluno)
+        {
+            conecta();
+            String aux = "SELECT * FROM Aluno WHERE nm_email_aluno = @email AND cd_senha_aluno = @senha AND ic_ativado = 1";
+
+            SqlCommand strSQL = new SqlCommand(aux, conn);
+            strSQL.Parameters.AddWithValue("@email", aluno.email);
+            strSQL.Parameters.AddWithValue("@senha", aluno.senha);
+
+            result = strSQL.ExecuteReader();
+
+            // Exatamente a sua lógica original de leitura
+            try
+            {
+                if (result.Read())
+                {
+                    aluno.ra = result["cd_ra"].ToString();
+                    aluno.cpf = result.GetString(1);
+                    aluno.nome = result.GetString(2);
+                    aluno.email = result.GetString(3);
+                    aluno.senha = result.GetString(4);
+                    aluno.telefone = result.GetString(5);
+                    aluno.dataNascimento = result.GetDateTime(6);
+                    aluno.ativo = result.GetBoolean(7);
+
+                    if (!result.IsDBNull(8))
+                        aluno.cd_endereco = result.GetInt32(8).ToString();
+                    else
+                        aluno.cd_endereco = "";
+
+                    Erro.setMsg("");
+                    Erro.setErro(false);
+                }
+                else
+                {
+                    Erro.setMsg("Email/Senha inválidos");
+                }
+            }
+            catch (SqlException sqlErro)
+            {
+                Erro.setMsg(sqlErro.Message);
+                return;
+            }
+            desconecta();
+        }
+
         public static int ObterMaiorRA()
         {
             conecta();

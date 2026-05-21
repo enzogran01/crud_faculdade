@@ -126,6 +126,33 @@ namespace FaculdadeProjeto
         }
 
         // aluno
+        public static void validaEntradaAluno(Aluno aluno)
+        {
+
+            // verifica email
+            if (aluno.email.Length == 0)
+            {
+                Erro.setMsg("O campo email é obrigatório.");
+                return;
+            }
+            else if (!System.Text.RegularExpressions.Regex.IsMatch(aluno.email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                Erro.setMsg("Email inválido.");
+                return;
+            }
+            // verifica senha
+            if (aluno.senha.Length < 8)
+            {
+                Erro.setMsg("A senha deve ter entre 8 e 20 caracteres.");
+                return;
+            }
+            else
+            {
+                aluno.senha = HashSenha(aluno.senha);
+            }
+
+            DAL.LoginAluno(aluno);
+        }
         public static void validaRA(Aluno aluno, char op)
         {
             Erro.setErro(false);

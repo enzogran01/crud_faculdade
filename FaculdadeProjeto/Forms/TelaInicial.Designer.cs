@@ -102,6 +102,7 @@
             this.Controls.Add(this.label1);
             this.KeyPreview = true;
             this.Name = "TelaInicial";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaInicial";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaInicial_KeyDown);
             this.ResumeLayout(false);

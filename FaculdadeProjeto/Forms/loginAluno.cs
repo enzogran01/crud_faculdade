@@ -42,5 +42,20 @@ namespace FaculdadeProjeto
                 mostrarSenhaButton.Text = "Mostrar Senha";
             }
         }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            Aluno aluno = new Aluno();
+            aluno.email = emailTextBox.Text;
+            aluno.senha = senhaTextBox.Text;
+
+            BLL.validaEntradaAluno(aluno);
+            if (Erro.getErro())
+            {
+                MessageBox.Show(Erro.getMsg());
+                return;
+            }
+            MessageBox.Show("Login Realizado com sucesso!");
+        }
     }
 }
