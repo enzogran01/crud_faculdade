@@ -230,18 +230,6 @@ namespace FaculdadeProjeto
 
             desconecta();
         }
-        //public static void deletaAluno(Aluno aluno)
-        //{
-        //    conecta();
-
-        //    String aux = "DELETE FROM Aluno WHERE cd_ra = @cd_ra";
-
-        //    strSQL = new SqlCommand(aux, conn);
-        //    strSQL.Parameters.AddWithValue("@cd_ra", aluno.ra);
-        //    strSQL.ExecuteNonQuery();
-
-        //    desconecta();
-        //}
         public static void consultaAluno(Aluno aluno)
         {
             conecta();
@@ -536,10 +524,35 @@ namespace FaculdadeProjeto
         public static void insereAdmin(Admin admin)
         {
             conecta();
-            String aux = "INSERT INTO Administrador " +
-                "(nm_admin, nm_email_admin, cd_senha_admin) VALUES" +
-                "(@nm_admin, @nm_email_admin, @cd_senha_admin)";
+
+            String aux = "";
+
+            if (admin.id != "")
+            {
+                // Se for manual, precisamos ATIVAR a permissão, incluir o campo cd_ra no INSERT e depois DESATIVAR
+                aux = @"
+                    SET IDENTITY_INSERT Administrador ON;
+                    
+                    INSERT INTO Administrador (cd_admin, nm_admin, nm_email_admin, cd_senha_admin)
+                    VALUES (@cd_admin, @nm_admin, @nm_email_admin, @cd_senha_admin);
+                    
+                    SET IDENTITY_INSERT Administrador OFF;";
+            }
+            else
+            {
+                // Se for automático, omitimos o campo cd_ra por completo
+                aux = @"
+                    INSERT INTO Administrador (nm_admin, nm_email_admin, cd_senha_admin)
+                    VALUES (@nm_admin, @nm_email_admin, @cd_senha_admin);";
+            }
+
+            //String aux = "INSERT INTO Administrador " +
+            //    "(cd_admin, nm_admin, nm_email_admin, cd_senha_admin) VALUES" +
+            //    "(@cd_admin, @nm_admin, @nm_email_admin, @cd_senha_admin)";
             strSQL = new SqlCommand(aux, conn);
+            if (admin.id != "")
+                strSQL.Parameters.AddWithValue("@cd_admin", admin.id);
+
             strSQL.Parameters.AddWithValue("@nm_admin", admin.nome);
             strSQL.Parameters.AddWithValue("@nm_email_admin", admin.email);
             strSQL.Parameters.AddWithValue("@cd_senha_admin", admin.senha);
@@ -549,7 +562,7 @@ namespace FaculdadeProjeto
             }
             catch (SqlException sqlErro)
             {
-                Erro.setMsg(sqlErro.Message);
+                Erro.setMsg("Chave Duplicada!");
             }
             desconecta();
         }

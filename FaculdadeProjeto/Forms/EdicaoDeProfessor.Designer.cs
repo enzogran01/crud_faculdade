@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.telefoneTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.confirmSenhaTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.senhaTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.CPFTextBox = new System.Windows.Forms.MaskedTextBox();
             this.nomeTextBox = new System.Windows.Forms.TextBox();
@@ -45,6 +43,8 @@
             this.ativoCheckBox = new System.Windows.Forms.CheckBox();
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.senhaTextBox = new System.Windows.Forms.TextBox();
+            this.confirmSenhaTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // telefoneTextBox
@@ -57,16 +57,6 @@
             this.telefoneTextBox.Size = new System.Drawing.Size(177, 32);
             this.telefoneTextBox.TabIndex = 40;
             // 
-            // confirmSenhaTextBox
-            // 
-            this.confirmSenhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmSenhaTextBox.Location = new System.Drawing.Point(276, 274);
-            this.confirmSenhaTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.confirmSenhaTextBox.Name = "confirmSenhaTextBox";
-            this.confirmSenhaTextBox.PasswordChar = '*';
-            this.confirmSenhaTextBox.Size = new System.Drawing.Size(393, 28);
-            this.confirmSenhaTextBox.TabIndex = 39;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -77,16 +67,6 @@
             this.label8.Size = new System.Drawing.Size(148, 24);
             this.label8.TabIndex = 38;
             this.label8.Text = "Confirmar senha";
-            // 
-            // senhaTextBox
-            // 
-            this.senhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.senhaTextBox.Location = new System.Drawing.Point(194, 226);
-            this.senhaTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.senhaTextBox.Name = "senhaTextBox";
-            this.senhaTextBox.PasswordChar = '*';
-            this.senhaTextBox.Size = new System.Drawing.Size(476, 28);
-            this.senhaTextBox.TabIndex = 37;
             // 
             // emailTextBox
             // 
@@ -225,20 +205,42 @@
             this.label7.TabIndex = 44;
             this.label7.Text = "ID";
             // 
+            // senhaTextBox
+            // 
+            this.senhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.senhaTextBox.Location = new System.Drawing.Point(199, 225);
+            this.senhaTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.senhaTextBox.MaxLength = 20;
+            this.senhaTextBox.Name = "senhaTextBox";
+            this.senhaTextBox.PasswordChar = '*';
+            this.senhaTextBox.Size = new System.Drawing.Size(471, 28);
+            this.senhaTextBox.TabIndex = 65;
+            // 
+            // confirmSenhaTextBox
+            // 
+            this.confirmSenhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmSenhaTextBox.Location = new System.Drawing.Point(282, 274);
+            this.confirmSenhaTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.confirmSenhaTextBox.MaxLength = 20;
+            this.confirmSenhaTextBox.Name = "confirmSenhaTextBox";
+            this.confirmSenhaTextBox.PasswordChar = '*';
+            this.confirmSenhaTextBox.Size = new System.Drawing.Size(388, 28);
+            this.confirmSenhaTextBox.TabIndex = 66;
+            // 
             // EdicaoDeProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.confirmSenhaTextBox);
+            this.Controls.Add(this.senhaTextBox);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.ativoCheckBox);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.telefoneTextBox);
-            this.Controls.Add(this.confirmSenhaTextBox);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.senhaTextBox);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.CPFTextBox);
             this.Controls.Add(this.nomeTextBox);
@@ -258,9 +260,7 @@
         #endregion
 
         private System.Windows.Forms.MaskedTextBox telefoneTextBox;
-        private System.Windows.Forms.TextBox confirmSenhaTextBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox senhaTextBox;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.MaskedTextBox CPFTextBox;
         private System.Windows.Forms.TextBox nomeTextBox;
@@ -274,5 +274,7 @@
         private System.Windows.Forms.CheckBox ativoCheckBox;
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox senhaTextBox;
+        private System.Windows.Forms.TextBox confirmSenhaTextBox;
     }
 }

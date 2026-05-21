@@ -42,9 +42,7 @@
             this.raTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.confirmSenhaTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.senhaTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.ativoCheckBox = new System.Windows.Forms.CheckBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -63,6 +61,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.complementoTextBox = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.confirmSenhaTextBox = new System.Windows.Forms.TextBox();
+            this.senhaTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // telefoneTextBox
@@ -223,16 +223,6 @@
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // confirmSenhaTextBox
-            // 
-            this.confirmSenhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmSenhaTextBox.Location = new System.Drawing.Point(292, 432);
-            this.confirmSenhaTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.confirmSenhaTextBox.Name = "confirmSenhaTextBox";
-            this.confirmSenhaTextBox.PasswordChar = '*';
-            this.confirmSenhaTextBox.Size = new System.Drawing.Size(393, 28);
-            this.confirmSenhaTextBox.TabIndex = 38;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -243,16 +233,6 @@
             this.label8.Size = new System.Drawing.Size(148, 24);
             this.label8.TabIndex = 37;
             this.label8.Text = "Confirmar senha";
-            // 
-            // senhaTextBox
-            // 
-            this.senhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.senhaTextBox.Location = new System.Drawing.Point(210, 384);
-            this.senhaTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.senhaTextBox.Name = "senhaTextBox";
-            this.senhaTextBox.PasswordChar = '*';
-            this.senhaTextBox.Size = new System.Drawing.Size(476, 28);
-            this.senhaTextBox.TabIndex = 36;
             // 
             // label4
             // 
@@ -445,11 +425,35 @@
             this.label16.TabIndex = 54;
             this.label16.Text = "Complemento";
             // 
+            // confirmSenhaTextBox
+            // 
+            this.confirmSenhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmSenhaTextBox.Location = new System.Drawing.Point(298, 432);
+            this.confirmSenhaTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.confirmSenhaTextBox.MaxLength = 20;
+            this.confirmSenhaTextBox.Name = "confirmSenhaTextBox";
+            this.confirmSenhaTextBox.PasswordChar = '*';
+            this.confirmSenhaTextBox.Size = new System.Drawing.Size(388, 28);
+            this.confirmSenhaTextBox.TabIndex = 68;
+            // 
+            // senhaTextBox
+            // 
+            this.senhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.senhaTextBox.Location = new System.Drawing.Point(215, 383);
+            this.senhaTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.senhaTextBox.MaxLength = 20;
+            this.senhaTextBox.Name = "senhaTextBox";
+            this.senhaTextBox.PasswordChar = '*';
+            this.senhaTextBox.Size = new System.Drawing.Size(471, 28);
+            this.senhaTextBox.TabIndex = 67;
+            // 
             // EdicaoDeAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1272, 552);
+            this.Controls.Add(this.confirmSenhaTextBox);
+            this.Controls.Add(this.senhaTextBox);
             this.Controls.Add(this.complementoTextBox);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
@@ -467,9 +471,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.ativoCheckBox);
-            this.Controls.Add(this.confirmSenhaTextBox);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.senhaTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.raTextBox);
@@ -510,9 +512,7 @@
         private System.Windows.Forms.TextBox raTextBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.TextBox confirmSenhaTextBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox senhaTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox ativoCheckBox;
         private System.Windows.Forms.Label label17;
@@ -531,5 +531,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox complementoTextBox;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox confirmSenhaTextBox;
+        private System.Windows.Forms.TextBox senhaTextBox;
     }
 }

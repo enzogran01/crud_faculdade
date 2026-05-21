@@ -41,7 +41,7 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.senhaTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.senhaTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // idTextBox
@@ -190,13 +190,14 @@
             // 
             // senhaTextBox
             // 
-            this.senhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.senhaTextBox.Location = new System.Drawing.Point(190, 137);
-            this.senhaTextBox.Mask = "aaaaaaaaaaaaaaaaaaaa";
+            this.senhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.senhaTextBox.Location = new System.Drawing.Point(190, 138);
+            this.senhaTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.senhaTextBox.MaxLength = 20;
             this.senhaTextBox.Name = "senhaTextBox";
             this.senhaTextBox.PasswordChar = '*';
-            this.senhaTextBox.Size = new System.Drawing.Size(303, 29);
-            this.senhaTextBox.TabIndex = 60;
+            this.senhaTextBox.Size = new System.Drawing.Size(476, 28);
+            this.senhaTextBox.TabIndex = 67;
             // 
             // GerenciaAdmin
             // 
@@ -240,6 +241,6 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.MaskedTextBox senhaTextBox;
+        private System.Windows.Forms.TextBox senhaTextBox;
     }
 }

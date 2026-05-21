@@ -82,35 +82,37 @@ namespace FaculdadeProjeto
                 return;
             }
             // verifica senha
-            if (professor.senha.Length < 8)
+            if (professor.senha.Length <= 20)
             {
-                Erro.setMsg("A senha deve ter pelo menos 8 caracteres.");
-                return;
-            }
-            else if (!System.Text.RegularExpressions.Regex.IsMatch(professor.senha, @"[A-Z]"))
-            {
-                Erro.setMsg("A senha deve ter pelo menos uma letra maiúscula.");
-                return;
-            }
-            else if (!System.Text.RegularExpressions.Regex.IsMatch(professor.senha, @"[a-z]"))
-            {
-                Erro.setMsg("A senha deve ter pelo menos uma letra minúscula.");
-                return;
-            }
-            else if (!System.Text.RegularExpressions.Regex.IsMatch(professor.senha, @"[0-9]"))
-            {
-                Erro.setMsg("A senha deve ter pelo menos um número.");
-                return;
-            }
-            else if (!System.Text.RegularExpressions.Regex.IsMatch(professor.senha, @"[_\-@#!$%&]"))
-            {
-                Erro.setMsg("A senha deve ter pelo menos um caractere especial (_-@#!$%&).");
-                return;
-            }
-            else
-            {
-                // senha valida, hash
-                professor.senha = HashSenha(professor.senha);
+                if (professor.senha.Length < 8)
+                {
+                    Erro.setMsg("A senha deve ter entre 8 e 20 caracteres.");
+                    return;
+                }
+                else if (!System.Text.RegularExpressions.Regex.IsMatch(professor.senha, @"[A-Z]"))
+                {
+                    Erro.setMsg("A senha deve ter pelo menos uma letra maiúscula.");
+                    return;
+                }
+                else if (!System.Text.RegularExpressions.Regex.IsMatch(professor.senha, @"[a-z]"))
+                {
+                    Erro.setMsg("A senha deve ter pelo menos uma letra minúscula.");
+                    return;
+                }
+                else if (!System.Text.RegularExpressions.Regex.IsMatch(professor.senha, @"[0-9]"))
+                {
+                    Erro.setMsg("A senha deve ter pelo menos um número.");
+                    return;
+                }
+                else if (!System.Text.RegularExpressions.Regex.IsMatch(professor.senha, @"[_\-@#!$%&]"))
+                {
+                    Erro.setMsg("A senha deve ter pelo menos um caractere especial (_-@#!$%&).");
+                    return;
+                }
+                else if (professor.senha.Length <= 20)
+                {
+                    professor.senha = HashSenha(professor.senha);
+                }
             }
 
             if (op == 'I')
@@ -182,35 +184,37 @@ namespace FaculdadeProjeto
                 return;
             }
             // verifica senha
-            if (aluno.senha.Length < 8)
+            if (aluno.senha.Length <= 20)
             {
-                Erro.setMsg("A senha deve ter pelo menos 8 caracteres." + aluno.senha);
-                return;
-            }
-            else if (!System.Text.RegularExpressions.Regex.IsMatch(aluno.senha, @"[A-Z]"))
-            {
-                Erro.setMsg("A senha deve ter pelo menos uma letra maiúscula.");
-                return;
-            }
-            else if (!System.Text.RegularExpressions.Regex.IsMatch(aluno.senha, @"[a-z]"))
-            {
-                Erro.setMsg("A senha deve ter pelo menos uma letra minúscula.");
-                return;
-            }
-            else if (!System.Text.RegularExpressions.Regex.IsMatch(aluno.senha, @"[0-9]"))
-            {
-                Erro.setMsg("A senha deve ter pelo menos um número.");
-                return;
-            }
-            else if (!System.Text.RegularExpressions.Regex.IsMatch(aluno.senha, @"[_\-@#!$%&]"))
-            {
-                Erro.setMsg("A senha deve ter pelo menos um caractere especial (_-@#!$%&).");
-                return;
-            }
-            else
-            {
-                // senha valida, hash
-                aluno.senha = HashSenha(aluno.senha);
+                if (aluno.senha.Length < 8)
+                {
+                    Erro.setMsg("A senha deve ter entre 8 e 20 caracteres.");
+                    return;
+                }
+                else if (!System.Text.RegularExpressions.Regex.IsMatch(aluno.senha, @"[A-Z]"))
+                {
+                    Erro.setMsg("A senha deve ter pelo menos uma letra maiúscula.");
+                    return;
+                }
+                else if (!System.Text.RegularExpressions.Regex.IsMatch(aluno.senha, @"[a-z]"))
+                {
+                    Erro.setMsg("A senha deve ter pelo menos uma letra minúscula.");
+                    return;
+                }
+                else if (!System.Text.RegularExpressions.Regex.IsMatch(aluno.senha, @"[0-9]"))
+                {
+                    Erro.setMsg("A senha deve ter pelo menos um número.");
+                    return;
+                }
+                else if (!System.Text.RegularExpressions.Regex.IsMatch(aluno.senha, @"[_\-@#!$%&]"))
+                {
+                    Erro.setMsg("A senha deve ter pelo menos um caractere especial (_-@#!$%&).");
+                    return;
+                }
+                else
+                {
+                    aluno.senha = HashSenha(aluno.senha);
+                }
             }
 
             if (op == 'I') { DAL.insereAluno(aluno); }

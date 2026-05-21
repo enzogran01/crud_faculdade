@@ -44,6 +44,8 @@ namespace FaculdadeProjeto.Forms
                 raTextBox.Text = aluno.ra;
                 ativoCheckBox.Checked = aluno.ativo;
                 nomeTextBox.Text = aluno.nome;
+                senhaTextBox.Text = aluno.senha;
+                confirmSenhaTextBox.Text = aluno.senha;
                 CPFTextBox.Text = aluno.cpf;
                 emailTextBox.Text = aluno.email;
                 telefoneTextBox.Text = aluno.telefone;
@@ -70,27 +72,30 @@ namespace FaculdadeProjeto.Forms
                 return;
             }
 
-            Aluno _aluno = new Aluno();
-            _aluno.ra = raTextBox.Text;
-            _aluno.nome = nomeTextBox.Text;
-            _aluno.cpf = CPFTextBox.Text.Replace(",", "").Replace("-", "").Replace("_", "");
-            _aluno.telefone = telefoneTextBox.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "").Replace("_", "");
-            _aluno.email = emailTextBox.Text;
-            _aluno.ativo = ativoCheckBox.Checked;
+            //Aluno _aluno = new Aluno();
+            aluno.ra = raTextBox.Text;
+            aluno.nome = nomeTextBox.Text;
+            aluno.cpf = CPFTextBox.Text.Replace(",", "").Replace("-", "").Replace("_", "");
+            aluno.telefone = telefoneTextBox.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "").Replace("_", "");
+            aluno.email = emailTextBox.Text;
+            aluno.ativo = ativoCheckBox.Checked;
 
-            if (senhaTextBox.Text == confirmSenhaTextBox.Text)
-                _aluno.senha = senhaTextBox.Text;
-            else
-                Erro.setMsg("As senhas precisam ser iguais!");
-
-            _aluno.dataNascimento = datanascDateTime.Value;
+            if (senhaTextBox.Text.Length <= 20)
+            {
+                if (senhaTextBox.Text == confirmSenhaTextBox.Text)
+                    aluno.senha = senhaTextBox.Text;
+                else
+                    Erro.setMsg("As senhas precisam ser iguais!");
+            }
+            
+            aluno.dataNascimento = datanascDateTime.Value;
 
             if (Erro.getErro())
             {
                 MessageBox.Show(Erro.getMsg());
                 return;
             }
-            BLL.validaDadosAluno(_aluno, 'A');
+            BLL.validaDadosAluno(aluno, 'A');
             if (Erro.getErro())
             {
                 MessageBox.Show(Erro.getMsg());
