@@ -198,6 +198,19 @@ namespace FaculdadeProjeto
         }
 
         // endereco
+        public static void validaEndereco(Endereco endereco, char op)
+        {
+            Erro.setErro(false);
+            if (endereco.id == null)
+            {
+                Erro.setMsg("Endereço id: " + endereco.id);
+                return;
+            }
+            if (op == 'c')
+                DAL.consultaEndereco(endereco);
+            //else
+                //DAL.deletaAluno(endereco);
+        }
         public static int validaDadosEndereco(Endereco endereco, char op)
         {
             Erro.setErro(false);
@@ -214,11 +227,13 @@ namespace FaculdadeProjeto
 
             if (op == 'A')
             {
-                // return DAL.alteraEndereco(endereco);
+                return DAL.alteraEndereco(endereco);
             }
 
             return 0;
         }
+
+
 
         public static async Task<Endereco> viaCEP(string cep)
         {

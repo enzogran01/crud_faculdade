@@ -13,6 +13,7 @@ namespace FaculdadeProjeto.Forms
     public partial class EdicaoDeAluno : Form
     {
         Aluno aluno = new Aluno();
+        Endereco endereco = new Endereco();
         public EdicaoDeAluno(string ra)
         {
             InitializeComponent();
@@ -23,6 +24,8 @@ namespace FaculdadeProjeto.Forms
         private void EdicaoDeAluno_Load()
         {
             BLL.validaRA(aluno, 'c');
+            endereco.id = aluno.cd_endereco;
+            BLL.validaEndereco(endereco, 'c');
 
             if (Erro.getErro())
             {
@@ -30,6 +33,14 @@ namespace FaculdadeProjeto.Forms
             }
             else
             {
+                CEPTextBox.Text = endereco.cep;
+                cidadeTextBox.Text = endereco.cidade;
+                estadoTextBox.Text = endereco.estado;
+                ruaTextBox.Text = endereco.rua;
+                bairroTextBox.Text = endereco.bairro;
+                numeroTextBox.Text = endereco.numero;
+                complementoTextBox.Text = endereco.complemento;
+
                 raTextBox.Text = aluno.ra;
                 ativoCheckBox.Checked = aluno.ativo;
                 nomeTextBox.Text = aluno.nome;
@@ -42,28 +53,44 @@ namespace FaculdadeProjeto.Forms
         }
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Aluno aluno = new Aluno();
-            aluno.ra = raTextBox.Text;
-            aluno.nome = nomeTextBox.Text;
-            aluno.cpf = CPFTextBox.Text.Replace(",", "").Replace("-", "").Replace("_", "");
-            aluno.telefone = telefoneTextBox.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "").Replace("_", "");
-            aluno.email = emailTextBox.Text;
-            aluno.ativo = ativoCheckBox.Checked;
+            Endereco endereco = new Endereco();
+            endereco.id = aluno.cd_endereco;
+            endereco.cep = CEPTextBox.Text.Replace("-", "").Replace("_", ""); ;
+            endereco.rua = ruaTextBox.Text;
+            endereco.bairro = bairroTextBox.Text;
+            endereco.cidade = cidadeTextBox.Text;
+            endereco.estado = estadoTextBox.Text;
+            endereco.numero = numeroTextBox.Text;
+            endereco.complemento = complementoTextBox.Text;
+
+            BLL.validaDadosEndereco(endereco, 'A');
+            if (Erro.getErro())
+            {
+                MessageBox.Show(Erro.getMsg());
+                return;
+            }
+
+            Aluno _aluno = new Aluno();
+            _aluno.ra = raTextBox.Text;
+            _aluno.nome = nomeTextBox.Text;
+            _aluno.cpf = CPFTextBox.Text.Replace(",", "").Replace("-", "").Replace("_", "");
+            _aluno.telefone = telefoneTextBox.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "").Replace("_", "");
+            _aluno.email = emailTextBox.Text;
+            _aluno.ativo = ativoCheckBox.Checked;
 
             if (senhaTextBox.Text == confirmSenhaTextBox.Text)
-                aluno.senha = senhaTextBox.Text;
+                _aluno.senha = senhaTextBox.Text;
             else
                 Erro.setMsg("As senhas precisam ser iguais!" + senhaTextBox.Text + " " + confirmSenhaTextBox.Text);
 
-            aluno.dataNascimento = datanascDateTime.Value;
-            //aluno.cd_endereco = cdEndereco.ToString();
+            _aluno.dataNascimento = datanascDateTime.Value;
 
             if (Erro.getErro())
             {
                 MessageBox.Show(Erro.getMsg());
                 return;
             }
-            BLL.validaDadosAluno(aluno, 'A');
+            BLL.validaDadosAluno(_aluno, 'A');
             if (Erro.getErro())
             {
                 MessageBox.Show(Erro.getMsg());
@@ -72,12 +99,31 @@ namespace FaculdadeProjeto.Forms
             MessageBox.Show("Aluno alterado com sucesso.");
         }
 
+        private async void CEPTextBox_Leave(object sender, EventArgs e)
+        {
+            string cep = CEPTextBox.Text.Replace("-", "").Replace("_", "");
+            if (cep.Length == 8)
+            {
+                Endereco endereco = await BLL.viaCEP(cep);
+                if (endereco == null)
+                {
+                    MessageBox.Show("Endereço não encontrado");
+                    return;
+                }
+                ruaTextBox.Text = endereco.rua;
+                bairroTextBox.Text = endereco.bairro;
+                cidadeTextBox.Text = endereco.cidade;
+                estadoTextBox.Text = endereco.estado;
+            }
+        }
+
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             new ConsultaAluno().Show();
             this.Close();
         }
 
+        
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -159,6 +205,11 @@ namespace FaculdadeProjeto.Forms
         }
 
         private void ativoCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CEPTextBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }

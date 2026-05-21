@@ -61,6 +61,8 @@
             this.CEPTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.complementoTextBox = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // telefoneTextBox
@@ -398,6 +400,7 @@
             this.CEPTextBox.Name = "CEPTextBox";
             this.CEPTextBox.Size = new System.Drawing.Size(110, 32);
             this.CEPTextBox.TabIndex = 42;
+            this.CEPTextBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.CEPTextBox_MaskInputRejected);
             // 
             // label10
             // 
@@ -421,11 +424,34 @@
             this.label9.TabIndex = 40;
             this.label9.Text = "Endereço";
             // 
+            // complementoTextBox
+            // 
+            this.complementoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.complementoTextBox.Location = new System.Drawing.Point(835, 364);
+            this.complementoTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.complementoTextBox.MaxLength = 255;
+            this.complementoTextBox.Name = "complementoTextBox";
+            this.complementoTextBox.Size = new System.Drawing.Size(410, 28);
+            this.complementoTextBox.TabIndex = 55;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(706, 367);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(129, 24);
+            this.label16.TabIndex = 54;
+            this.label16.Text = "Complemento";
+            // 
             // EdicaoDeAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1272, 552);
+            this.Controls.Add(this.complementoTextBox);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.numeroTextBox);
             this.Controls.Add(this.label15);
@@ -501,5 +527,7 @@
         private System.Windows.Forms.MaskedTextBox CEPTextBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox complementoTextBox;
+        private System.Windows.Forms.Label label16;
     }
 }

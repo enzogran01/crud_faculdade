@@ -85,6 +85,7 @@ namespace FaculdadeProjeto
                 Endereco endereco = await BLL.viaCEP(cep);
                 if (endereco == null)
                 {
+                    MessageBox.Show("Endereço não encontrado");
                     return;
                 }
                 ruaTextBox.Text = endereco.rua;
@@ -92,6 +93,11 @@ namespace FaculdadeProjeto
                 cidadeTextBox.Text = endereco.cidade;
                 estadoTextBox.Text = endereco.estado;
             }
+        }
+
+        private void CEPTextBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }

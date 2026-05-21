@@ -276,6 +276,7 @@
             this.CEPTextBox.Name = "CEPTextBox";
             this.CEPTextBox.Size = new System.Drawing.Size(110, 32);
             this.CEPTextBox.TabIndex = 19;
+            this.CEPTextBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.CEPTextBox_MaskInputRejected);
             this.CEPTextBox.Leave += new System.EventHandler(this.CEPTextBox_Leave);
             // 
             // label11

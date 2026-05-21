@@ -270,6 +270,55 @@ namespace FaculdadeProjeto
             desconecta();
             return idGerado;
         }
+        public static int alteraEndereco(Endereco endereco)
+        {
+            conecta();
+
+            String aux = "UPDATE Endereco SET " +
+                "cd_cep=@cd_cep, nm_cidade=@nm_cidade, sg_estado=@sg_estado, nm_rua=@nm_rua, " +
+                "nm_bairro=@nm_bairro, " +
+                "nr_logradouro=@nr_logradouro, ds_complemento=@ds_complemento WHERE cd_endereco=@cd_endereco";
+            strSQL = new SqlCommand(aux, conn);
+            strSQL.Parameters.AddWithValue("@cd_cep", endereco.cep);
+            strSQL.Parameters.AddWithValue("@nm_cidade", endereco.cidade);
+            strSQL.Parameters.AddWithValue("@sg_estado", endereco.estado);
+            strSQL.Parameters.AddWithValue("@nm_rua", endereco.rua);
+            strSQL.Parameters.AddWithValue("@nm_bairro", endereco.bairro);
+            strSQL.Parameters.AddWithValue("@nr_logradouro", endereco.numero);
+            strSQL.Parameters.AddWithValue("@ds_complemento", endereco.complemento);
+            strSQL.Parameters.AddWithValue("@cd_endereco", endereco.id);
+            strSQL.ExecuteNonQuery();
+
+            desconecta();
+
+            return 0;
+        }
+        public static void consultaEndereco(Endereco endereco)
+        {
+            conecta();
+
+            String aux = "SELECT * FROM Endereco WHERE cd_endereco = @cd_endereco";
+
+            strSQL = new SqlCommand(aux, conn);
+            strSQL.Parameters.AddWithValue("@cd_endereco", endereco.id);
+            result = strSQL.ExecuteReader();
+            Erro.setErro(false);
+            if (result.Read())
+            {
+                endereco.id = result["cd_endereco"].ToString();
+                endereco.cep = result.GetString(1);
+                endereco.cidade = result.GetString(2);
+                endereco.estado = result.GetString(3);
+                endereco.rua = result.GetString(4);
+                endereco.bairro = result.GetString(5);
+                endereco.numero = result.GetString(6);
+                endereco.complemento = result.GetString(7);
+            }
+            else
+                Erro.setMsg("Endereço não cadastrado.");
+
+            desconecta();
+        }
         public static async Task<Endereco> buscaCEP(string cep)
         {
             using (HttpClient client = new HttpClient())
