@@ -248,6 +248,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "EdicaoDeProfessor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EdicaoDeProfessor";
             this.ResumeLayout(false);
             this.PerformLayout();

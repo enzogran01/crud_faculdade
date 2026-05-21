@@ -42,5 +42,12 @@ namespace FaculdadeProjeto.Forms
             consultaProfessor.Show();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ConsultaMatricula consultaMatricula = new ConsultaMatricula();
+            consultaMatricula.Show();
+            this.Close();
+        }
     }
 }

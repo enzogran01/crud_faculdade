@@ -39,7 +39,7 @@ namespace FaculdadeProjeto.Forms
 
             // Dica de performance: congela o visual do ListView enquanto adiciona as linhas
             listView1.BeginUpdate();
-            for (int i = 1; i <= DAL.ObterMaiorRA(); i++)
+            for (int i = 1; i <= DAL.ObterMaiorIDCurso(); i++)
             {
                 Erro.setMsg("");
 

@@ -213,5 +213,10 @@ namespace FaculdadeProjeto.Forms
         {
 
         }
+
+        private void EdicaoDeAluno_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

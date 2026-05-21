@@ -36,6 +36,32 @@ namespace FaculdadeProjeto
             conn.Close();
         }
         // professor
+
+        public static int ObterMaiorIDProfessor()
+        {
+            conecta();
+
+            // MAX(cd_ra) busca o maior número da coluna. 
+            // ISNULL(..., 0) garante que se a tabela estiver totalmente vazia, ele retorne 0 em vez de NULL.
+            string sql = "SELECT ISNULL(MAX(cd_professor), 0) FROM Professor";
+
+            strSQL = new SqlCommand(sql, conn);
+
+            try
+            {
+                // ExecuteScalar é perfeito aqui porque a query só devolve 1 linha e 1 coluna (um único número)
+                int maiorID = Convert.ToInt32(strSQL.ExecuteScalar());
+                return maiorID;
+            }
+            catch (SqlException sqlErro)
+            {
+                throw new Exception("Erro ao buscar o maior ID: " + sqlErro.Message);
+            }
+            finally
+            {
+                desconecta();
+            }
+        }
         public static void insereProfessor(Professor professor)
         {
             conecta();
@@ -354,8 +380,32 @@ namespace FaculdadeProjeto
                 return endereco;
             }
         }
-            // curso
+        // curso
+        public static int ObterMaiorIDCurso()
+        {
+            conecta();
 
+            // MAX(cd_ra) busca o maior número da coluna. 
+            // ISNULL(..., 0) garante que se a tabela estiver totalmente vazia, ele retorne 0 em vez de NULL.
+            string sql = "SELECT ISNULL(MAX(cd_curso), 0) FROM Curso";
+
+            strSQL = new SqlCommand(sql, conn);
+
+            try
+            {
+                // ExecuteScalar é perfeito aqui porque a query só devolve 1 linha e 1 coluna (um único número)
+                int maiorID = Convert.ToInt32(strSQL.ExecuteScalar());
+                return maiorID;
+            }
+            catch (SqlException sqlErro)
+            {
+                throw new Exception("Erro ao buscar o maior ID: " + sqlErro.Message);
+            }
+            finally
+            {
+                desconecta();
+            }
+        }
         public static void insereCurso(Curso curso)
         {
             conecta();
@@ -417,6 +467,68 @@ namespace FaculdadeProjeto
                 Erro.setMsg("Curso não cadastrado.");
 
             desconecta();
+        }
+
+        // matricula
+        public static List<Matricula> BuscarMatriculasPorAluno(string raAluno)
+        {
+            // 1. Cria a lista vazia que vai guardar as matrículas encontradas
+            List<Matricula> listaMatriculas = new List<Matricula>();
+
+            try
+            {
+                conecta();
+
+                // 2. Query filtrando pelo cd_aluno (que é o RA dele na tabela Matricula)
+                string aux = "SELECT M.cd_matricula, M.dt_matricula, M.ds_status, M.ds_turno, M.cd_aluno, M.cd_curso, " +
+                     "A.nm_aluno, " +
+                     "C.nm_curso " +
+                     "FROM Matricula M " +
+                     "INNER JOIN Aluno A ON M.cd_aluno = A.cd_ra " +
+                     "INNER JOIN Curso C ON M.cd_curso = C.cd_curso " +
+                     "WHERE A.cd_ra = @cd_ra";
+
+                strSQL = new SqlCommand(aux, conn);
+                strSQL.Parameters.AddWithValue("@cd_ra", raAluno);
+
+                result = strSQL.ExecuteReader();
+                Erro.setErro(false);
+
+                while (result.Read())
+                {
+                    Matricula mat = new Matricula();
+
+                    mat.id = result.GetInt32(0).ToString();
+                    mat.data = result.GetDateTime(1);
+                    mat.ativo = result.GetString(2);
+                    mat.turno = result.GetString(3);
+                    mat.ra_aluno = result.GetInt32(4).ToString();
+                    mat.nm_aluno = result["nm_aluno"].ToString();
+                    mat.id_curso = result.GetInt32(5).ToString();
+                    mat.nm_curso = result["nm_curso"].ToString();
+
+                    listaMatriculas.Add(mat);
+                }
+
+                if (listaMatriculas.Count == 0)
+                {
+                    Erro.setErro(true);
+                    Erro.setMsg("Nenhuma matrícula encontrada para este aluno.");
+                }
+
+                result.Close();
+            }
+            catch (Exception ex)
+            {
+                Erro.setErro(true);
+                Erro.setMsg("Erro ao buscar matrículas: " + ex.Message);
+            }
+            finally
+            {
+                desconecta();
+            }
+            // Retorna a lista (cheia ou vazia) para quem chamou o método
+            return listaMatriculas;
         }
     }
 }

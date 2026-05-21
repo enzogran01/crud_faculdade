@@ -74,6 +74,7 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnVoltar);
             this.Name = "ConsultaAluno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultaAluno";
             this.ResumeLayout(false);
 
