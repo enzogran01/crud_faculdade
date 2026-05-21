@@ -53,5 +53,20 @@ namespace FaculdadeProjeto
             telaAdmin.Show();
             this.Hide();
         }
+
+        private void TelaInicial_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Alt && e.KeyCode == Keys.A)
+            {
+                // Torna o botão visível na tela!
+                btnAdmin.Visible = true;
+
+                // Opcional: Dá um foco visual direto no botão que acabou de surgir
+                btnAdmin.Focus();
+
+                // Impede que o Windows faça o som de "bip" ou propague o atalho para outros cantos
+                e.Handled = true;
+            }
+        }
     }
 }

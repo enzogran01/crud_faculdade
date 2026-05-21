@@ -49,5 +49,16 @@ namespace FaculdadeProjeto.Forms
             consultaMatricula.Show();
             this.Close();
         }
+
+        private void TelaAdmin_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new TelaInicial().Show();
+            this.Close();
+        }
     }
 }
