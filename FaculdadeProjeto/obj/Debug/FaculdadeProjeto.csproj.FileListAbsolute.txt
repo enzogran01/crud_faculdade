@@ -197,3 +197,4 @@ D:\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\Faculdad.0262FDBB.Up2Date
 D:\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.exe
 D:\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.pdb
 D:\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.Forms.GerenciaAdmin.resources
+D:\GitHub\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.Forms.LoginAdmin.resources

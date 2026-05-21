@@ -3,15 +3,39 @@
   "WorkspaceRootPath": "D:\\GitHub\\crud_faculdade\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|d:\\github\\crud_faculdade\\faculdadeprojeto\\forms\\loginprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|d:\\github\\crud_faculdade\\faculdadeprojeto\\forms\\loginadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\loginadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|d:\\github\\crud_faculdade\\faculdadeprojeto\\forms\\loginadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\loginadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\loginprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\loginprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|d:\\github\\crud_faculdade\\faculdadeprojeto\\forms\\loginprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\gerenciaadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\gerenciaadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|d:\\github\\crud_faculdade\\faculdadeprojeto\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\loginprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\loginprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,24 +47,12 @@
       "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\loginaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\regprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\regprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\regaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\regaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\gerenciaadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\gerenciaadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\gerenciaadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -81,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\regaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\regaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|solutionrelative:faculdadeprojeto\\forms\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD82897A-AB29-46DD-B93B-58DA6D695C7C}|FaculdadeProjeto\\FaculdadeProjeto.csproj|D:\\GitHub\\crud_faculdade\\faculdadeprojeto\\forms\\edicaocurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -166,11 +174,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "GerenciaAdmin.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\GerenciaAdmin.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\GerenciaAdmin.cs",
@@ -179,11 +187,12 @@
               "ViewState": "AgIAAD8AAAAAAAAAAAAhwFYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-21T12:25:11.861Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "GerenciaAdmin.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\GerenciaAdmin.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\GerenciaAdmin.cs",
@@ -191,17 +200,18 @@
               "RelativeToolTip": "FaculdadeProjeto\\Forms\\GerenciaAdmin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-21T12:24:13.281Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "BLL.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\BLL.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\BLL.cs",
               "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\BLL.cs",
               "RelativeToolTip": "FaculdadeProjeto\\BLL.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAQwDIAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAG4BAAAAAAAAAAAiwIABAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-21T12:02:09.641Z",
               "IsPinned": true,
@@ -209,13 +219,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "DAL.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\DAL.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\DAL.cs",
               "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\DAL.cs",
               "RelativeToolTip": "FaculdadeProjeto\\DAL.cs",
-              "ViewState": "AgIAAOMAAAAAAAAAAAAAAAEBAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAGwCAAAAAAAAAAAAAPkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-21T12:02:09.64Z",
               "IsPinned": true,
@@ -223,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "EdicaoDeAluno.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\EdicaoDeAluno.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\EdicaoDeAluno.cs",
@@ -236,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "EdicaoDeAluno.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\EdicaoDeAluno.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\EdicaoDeAluno.cs",
@@ -248,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "EdicaoDeProfessor.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\EdicaoDeProfessor.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\EdicaoDeProfessor.cs",
@@ -261,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "EdicaoDeProfessor.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\EdicaoDeProfessor.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\EdicaoDeProfessor.cs",
@@ -273,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "loginAluno.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginAluno.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\loginAluno.cs",
@@ -282,12 +292,11 @@
               "ViewState": "AgIAABcAAAAAAAAAAADgvyEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-21T14:46:30.5Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "loginAluno.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginAluno.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\loginAluno.cs",
@@ -295,18 +304,17 @@
               "RelativeToolTip": "FaculdadeProjeto\\Forms\\loginAluno.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-21T12:02:09.956Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "loginProfessor.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginProfessor.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\loginProfessor.cs",
               "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginProfessor.cs",
               "RelativeToolTip": "FaculdadeProjeto\\Forms\\loginProfessor.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAArwEcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAArwC0AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-21T15:40:25.725Z",
               "IsPinned": true,
@@ -314,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "loginProfessor.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\loginProfessor.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\loginProfessor.cs",
@@ -327,7 +335,102 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 1,
+              "Title": "LoginAdmin.cs",
+              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\LoginAdmin.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\LoginAdmin.cs",
+              "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\LoginAdmin.cs",
+              "RelativeToolTip": "FaculdadeProjeto\\Forms\\LoginAdmin.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAADgv0EAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T16:01:41.328Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginAdmin.cs [Design]",
+              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\LoginAdmin.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\LoginAdmin.cs",
+              "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\LoginAdmin.cs [Design]",
+              "RelativeToolTip": "FaculdadeProjeto\\Forms\\LoginAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T16:01:11.506Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ConsultaProfessor.cs [Design]",
+              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaProfessor.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\ConsultaProfessor.cs",
+              "ToolTip": "C:\\Users\\Matheux\\Documents\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaProfessor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T12:02:09.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TelaAdmin.cs [Design]",
+              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaAdmin.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\TelaAdmin.cs",
+              "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaAdmin.cs [Design]",
+              "RelativeToolTip": "FaculdadeProjeto\\Forms\\TelaAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T12:02:09.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TelaInicial.cs",
+              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaInicial.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\TelaInicial.cs",
+              "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaInicial.cs",
+              "RelativeToolTip": "FaculdadeProjeto\\Forms\\TelaInicial.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswDMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T12:02:09.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TelaInicial.cs [Design]",
+              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaInicial.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\TelaInicial.cs",
+              "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaInicial.cs [Design]",
+              "RelativeToolTip": "FaculdadeProjeto\\Forms\\TelaInicial.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T12:02:09.642Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "regAluno.cs [Design]",
+              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\regAluno.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\regAluno.cs",
+              "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\regAluno.cs [Design]",
+              "RelativeToolTip": "FaculdadeProjeto\\Forms\\regAluno.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T12:02:09.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "regProfessor.cs [Design]",
+              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\regProfessor.cs",
+              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\regProfessor.cs",
+              "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\regProfessor.cs [Design]",
+              "RelativeToolTip": "FaculdadeProjeto\\Forms\\regProfessor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T12:02:09.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "TelaAdmin.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaAdmin.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\TelaAdmin.cs",
@@ -339,61 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ConsultaProfessor.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaProfessor.cs",
-              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\ConsultaProfessor.cs",
-              "ToolTip": "C:\\Users\\Matheux\\Documents\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaProfessor.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T12:02:09.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TelaAdmin.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaAdmin.cs",
-              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\TelaAdmin.cs",
-              "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaAdmin.cs [Design]",
-              "RelativeToolTip": "FaculdadeProjeto\\Forms\\TelaAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T12:02:09.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TelaInicial.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaInicial.cs",
-              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\TelaInicial.cs",
-              "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaInicial.cs [Design]",
-              "RelativeToolTip": "FaculdadeProjeto\\Forms\\TelaInicial.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T12:02:09.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "regAluno.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\regAluno.cs",
-              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\regAluno.cs",
-              "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\regAluno.cs [Design]",
-              "RelativeToolTip": "FaculdadeProjeto\\Forms\\regAluno.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T12:02:09.952Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "regProfessor.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\regProfessor.cs",
-              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\regProfessor.cs",
-              "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\regProfessor.cs [Design]",
-              "RelativeToolTip": "FaculdadeProjeto\\Forms\\regProfessor.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T12:02:09.634Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Admin.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Admin.cs",
@@ -405,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "regProfessor.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\regProfessor.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\regProfessor.cs",
@@ -417,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ConsultaProfessor.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaProfessor.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\ConsultaProfessor.cs",
@@ -429,19 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TelaInicial.cs",
-              "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaInicial.cs",
-              "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\TelaInicial.cs",
-              "ToolTip": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaInicial.cs",
-              "RelativeToolTip": "FaculdadeProjeto\\Forms\\TelaInicial.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAhwEAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T12:02:09.641Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "ConsultaCurso.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaCurso.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\ConsultaCurso.cs",
@@ -453,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "ConsultaCurso.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaCurso.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\ConsultaCurso.cs",
@@ -463,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "EdicaoCurso.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\EdicaoCurso.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\EdicaoCurso.cs",
@@ -475,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "EdicaoCurso.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\EdicaoCurso.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\EdicaoCurso.cs",
@@ -485,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "ConsultaMatricula.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaMatricula.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\ConsultaMatricula.cs",
@@ -497,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "ConsultaMatricula.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaMatricula.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\ConsultaMatricula.cs",
@@ -507,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Matricula.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Matricula.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Matricula.cs",
@@ -519,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "Aluno.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Aluno.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Aluno.cs",
@@ -531,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "Curso.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Curso.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Curso.cs",
@@ -543,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "Professor.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Professor.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Professor.cs",
@@ -555,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Erro.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Erro.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Erro.cs",
@@ -567,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "ConsultaAluno.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaAluno.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\ConsultaAluno.cs",
@@ -577,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "regAluno.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\regAluno.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\regAluno.cs",
@@ -589,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "Endereco.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Endereco.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Endereco.cs",
@@ -601,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "ConsultaAluno.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaAluno.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\ConsultaAluno.cs",
@@ -613,7 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "ConsultaCurso.Designer.cs",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\ConsultaCurso.Designer.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\ConsultaCurso.Designer.cs",
@@ -625,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "TelaProfessor.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\crud_faculdade\\FaculdadeProjeto\\Forms\\TelaProfessor.cs",
               "RelativeDocumentMoniker": "FaculdadeProjeto\\Forms\\TelaProfessor.cs",

@@ -247,7 +247,7 @@ namespace FaculdadeProjeto
                 }
                 else
                 {
-                    Erro.setMsg("Email/Senha inválidos ou Usuário");
+                    Erro.setMsg("Email/Senha inválidos");
                     desconecta();
                     return;
                 }
@@ -623,7 +623,45 @@ namespace FaculdadeProjeto
         }
 
         // Admin    
+        public static void LoginAdmin(Admin admin)
+        {
+            conecta();
+            String aux = "SELECT * FROM Administrador WHERE nm_email_admin = @email AND cd_senha_admin = @senha";
 
+            SqlCommand strSQL = new SqlCommand(aux, conn);
+            strSQL.Parameters.AddWithValue("@email", admin.email);
+            strSQL.Parameters.AddWithValue("@senha", admin.senha);
+
+
+            // Exatamente a sua lógica original de leitura
+            try
+            {
+                result = strSQL.ExecuteReader();
+                if (result.Read())
+                {
+                    admin.id = result["cd_admin"].ToString();
+                    admin.nome = result.GetString(1);
+                    admin.email = result.GetString(2);
+                    admin.senha = result.GetString(3);
+
+                    Erro.setMsg("");
+                    Erro.setErro(false);
+                }
+                else
+                {
+                    Erro.setMsg("Email/Senha inválidos");
+                    desconecta();
+                    return;
+                }
+            }
+            catch (SqlException sqlErro)
+            {
+                Erro.setMsg(sqlErro.Message);
+                desconecta();
+                return;
+            }
+            desconecta();
+        }
         public static void insereAdmin(Admin admin)
         {
             conecta();

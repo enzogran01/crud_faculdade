@@ -367,7 +367,35 @@ namespace FaculdadeProjeto
         }
 
         // admin
+        public static void validaEntradaAdmin(Admin admin)
+        {
 
+            // verifica email
+            if (admin.email.Length == 0)
+            {
+                Erro.setMsg("O campo email é obrigatório.");
+                return;
+            }
+            else if (!System.Text.RegularExpressions.Regex.IsMatch(admin.email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                Erro.setMsg("Email inválido.");
+                return;
+            }
+            // verifica senha
+            if (admin.senha.Length <= 0)
+            {
+                Erro.setMsg("A senha é de preenchimento obrigatório.");
+                return;
+            }
+            else
+            {
+                admin.senha = HashSenha(admin.senha);
+            }
+
+            Erro.setMsg("");
+            Erro.setErro(false);
+            DAL.LoginAdmin(admin);
+        }
         public static void validaIDAdmin(Admin admin, char op)
         {
             Erro.setMsg("");

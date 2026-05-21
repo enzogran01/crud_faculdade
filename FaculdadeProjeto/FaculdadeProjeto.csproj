@@ -132,6 +132,12 @@
     <Compile Include="Forms\GerenciaAdmin.Designer.cs">
       <DependentUpon>GerenciaAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\LoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginAdmin.Designer.cs">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\loginAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GerenciaAdmin.resx">
       <DependentUpon>GerenciaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginAdmin.resx">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\loginAluno.resx">
       <DependentUpon>loginAluno.cs</DependentUpon>

@@ -49,8 +49,8 @@ namespace FaculdadeProjeto
 
         private void button5_Click(object sender, EventArgs e)
         {
-            TelaAdmin telaAdmin = new TelaAdmin();
-            telaAdmin.Show();
+            LoginAdmin loginAdmin = new LoginAdmin();
+            loginAdmin.Show();
             this.Hide();
         }
 
