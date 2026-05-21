@@ -66,6 +66,12 @@ namespace FaculdadeProjeto.Forms
                     linha.SubItems.Add(aluno.telefone);
                     linha.SubItems.Add(aluno.dataNascimento.ToString());
 
+                    if (!aluno.ativo)
+                    {
+                        linha.BackColor = Color.MistyRose;
+                        linha.ForeColor = Color.DarkRed;
+                    }
+
                     listView1.Items.Add(linha);
                 }
             }
@@ -116,6 +122,19 @@ namespace FaculdadeProjeto.Forms
                         MessageBox.Show("Erro ao excluir: " + sqlErro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecione um aluno na lista para excluir.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+            {
+                new EdicaoDeAluno(listView1.SelectedItems[0].Text).Show();
+                this.Close();
             }
             else
             {

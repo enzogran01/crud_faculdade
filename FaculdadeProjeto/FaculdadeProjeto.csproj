@@ -89,6 +89,12 @@
     <Compile Include="Forms\ConsultaAluno.Designer.cs">
       <DependentUpon>ConsultaAluno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EdicaoDeAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EdicaoDeAluno.Designer.cs">
+      <DependentUpon>EdicaoDeAluno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\loginAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\ConsultaAluno.resx">
       <DependentUpon>ConsultaAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EdicaoDeAluno.resx">
+      <DependentUpon>EdicaoDeAluno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\loginAluno.resx">
       <DependentUpon>loginAluno.cs</DependentUpon>

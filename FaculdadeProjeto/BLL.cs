@@ -164,7 +164,7 @@ namespace FaculdadeProjeto
             // verifica senha
             if (aluno.senha.Length < 8)
             {
-                Erro.setMsg("A senha deve ter pelo menos 8 caracteres.");
+                Erro.setMsg("A senha deve ter pelo menos 8 caracteres." + aluno.senha);
                 return;
             }
             else if (!System.Text.RegularExpressions.Regex.IsMatch(aluno.senha, @"[A-Z]"))
@@ -194,7 +194,7 @@ namespace FaculdadeProjeto
             }
 
             if (op == 'I') { DAL.insereAluno(aluno); }
-            //if (op == 'A') { DAL.alteraAluno(aluno); }
+            if (op == 'A') { DAL.alteraAluno(aluno); }
         }
 
         // endereco

@@ -185,7 +185,9 @@ namespace FaculdadeProjeto
             conecta();
 
             String aux = "UPDATE Aluno SET " +
-                "cd_ra=@cd_ra, nm_aluno=@nm_aluno, cd_cpf=@cd_cpf, cd_telefone_aluno=@cd_telefone_aluno, nm_email_aluno=@nm_email_aluno, cd_senha_aluno=@cd_senha_aluno, dt_nascimento_aluno=@dt_nascimento_aluno, cd_endereco=@cd_endereco";
+                "nm_aluno=@nm_aluno, cd_cpf=@cd_cpf, cd_telefone_aluno=@cd_telefone_aluno, nm_email_aluno=@nm_email_aluno, " +
+                "cd_senha_aluno=@cd_senha_aluno, " +
+                "dt_nascimento_aluno=@dt_nascimento_aluno, ic_ativado=@ic_ativado WHERE cd_ra=@cd_ra";
             strSQL = new SqlCommand(aux, conn);
             strSQL.Parameters.AddWithValue("@cd_ra", aluno.ra);
             strSQL.Parameters.AddWithValue("@nm_aluno", aluno.nome);
@@ -194,7 +196,8 @@ namespace FaculdadeProjeto
             strSQL.Parameters.AddWithValue("@nm_email_aluno", aluno.email);
             strSQL.Parameters.AddWithValue("@cd_senha_aluno", aluno.senha);
             strSQL.Parameters.AddWithValue("@dt_nascimento_aluno", aluno.dataNascimento);
-            strSQL.Parameters.AddWithValue("@cd_endereco", Convert.ToInt32(aluno.cd_endereco));
+            strSQL.Parameters.AddWithValue("@ic_ativado", aluno.ativo);
+            //strSQL.Parameters.AddWithValue("@cd_endereco", Convert.ToInt32(aluno.cd_endereco));
             strSQL.ExecuteNonQuery();
 
             desconecta();
@@ -231,7 +234,7 @@ namespace FaculdadeProjeto
                 aluno.telefone = result.GetString(5);
                 aluno.dataNascimento = result.GetDateTime(6);
                 aluno.ativo = result.GetBoolean(7);
-                //aluno.cd_endereco = result.GetInt32(8).ToString();
+                aluno.cd_endereco = result.GetInt32(8).ToString();
             }
             else
                 Erro.setMsg("Aluno não cadastrado.");
