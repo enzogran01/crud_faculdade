@@ -31,31 +31,30 @@ namespace FaculdadeProjeto.Forms
             listView1.BeginUpdate();
             for (int i = 1; i <= DAL.ObterMaiorRA(); i++)
             {
-                Erro.setMsg("");
+                //Erro.setMsg("");
 
-                aluno.ra = i.ToString();
-                BLL.validaRA(aluno, 'c');
-                if (!Erro.getErro())
-                {
-                    ListViewItem linha = new ListViewItem(i.ToString());
-                    linha.SubItems.Add(aluno.cpf);
-                    linha.SubItems.Add(aluno.nome);
-                    linha.SubItems.Add(aluno.email);
-                    linha.SubItems.Add(aluno.senha);
-                    linha.SubItems.Add(aluno.telefone);
-                    linha.SubItems.Add(aluno.dataNascimento.ToString());
+                //aluno.ra = i.ToString();
+                //BLL.validaRA(aluno, 'c');
+                //if (!Erro.getErro())
+                //{
+                //    ListViewItem linha = new ListViewItem(i.ToString());
+                //    linha.SubItems.Add(aluno.cpf);
+                //    linha.SubItems.Add(aluno.nome);
+                //    linha.SubItems.Add(aluno.email);
+                //    linha.SubItems.Add(aluno.senha);
+                //    linha.SubItems.Add(aluno.telefone);
+                //    linha.SubItems.Add(aluno.dataNascimento.ToString());
 
-                    if (!aluno.ativo)
-                    {
-                        linha.BackColor = Color.MistyRose;
-                        linha.ForeColor = Color.DarkRed;
-                    }
+                //    if (!aluno.ativo)
+                //    {
+                //        linha.BackColor = Color.MistyRose;
+                //        linha.ForeColor = Color.DarkRed;
+                //    }
 
-                    listView1.Items.Add(linha);
+                //    listView1.Items.Add(linha);
                 }
             }
-            listView1.EndUpdate();
-        }
+            //listView1.EndUpdate
         public TelaProfessor()
         {
             InitializeComponent();

@@ -287,3 +287,4 @@ C:\Users\Administrador\OneDrive\Desktop\crud_faculdade\FaculdadeProjeto\obj\Debu
 C:\Users\Administrador\OneDrive\Desktop\crud_faculdade\FaculdadeProjeto\obj\Debug\Faculdad.0262FDBB.Up2Date
 C:\Users\Administrador\OneDrive\Desktop\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.exe
 C:\Users\Administrador\OneDrive\Desktop\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.pdb
+C:\Users\Administrador\OneDrive\Desktop\crud_faculdade\FaculdadeProjeto\obj\Debug\FaculdadeProjeto.Forms.TelaAluno.resources

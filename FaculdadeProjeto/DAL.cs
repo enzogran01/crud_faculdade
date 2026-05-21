@@ -623,10 +623,7 @@ namespace FaculdadeProjeto
         // Materia
         public static void ListarMaterias(Materia materia)
         {
-            conecta();
-
-            string aux = "SELECT * FROM Materia " +
-                "INNER JOIN"
+            
         }
 
         // Admin    
